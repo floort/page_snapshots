@@ -8,6 +8,7 @@ DELAY = 30*60 # 30 minutes
 MONITOR = (
     # ("url", "target_path"),
     ("https://www.google.com/intl/nl/+/policy/", "files/googleplus_nl.html"),
+    ("https://www.dropbox.com/terms", "files/dropbox_en.html"),
 )
 
 # Get all the pages
