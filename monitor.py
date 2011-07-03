@@ -9,6 +9,7 @@ MONITOR = (
     # ("url", "target_path"),
     ("https://www.google.com/intl/nl/+/policy/", "files/googleplus_nl.html"),
     ("https://www.dropbox.com/terms", "files/dropbox_en.html"),
+    ("http://www.skype.com/intl/nl/legal/privacy/general/", "files/skype_nl.html"),
 )
 
 # Get all the pages
