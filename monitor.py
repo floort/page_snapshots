@@ -1,25 +1,24 @@
 #!/usr/bin/env python
 
-import sys
+import os
 import urllib2
-import datetime
-import sha
-import time
 
+REPO_PATH = "/home/floort/devel/page_snapshots/"
 DELAY = 30*60 # 30 minutes
-old_digest = ""
+MONITOR = (
+    # ("url", "target_path"),
+    ("https://www.google.com/intl/nl/+/policy/", "files/googleplus_nl.html"),
+)
 
+# Get all the pages
+for page in MONITOR:
+    page_content = urllib2.urlopen(page[0]).read()
+    open(page[1], "w").write(page_content)
 
-while True:
-    page = urllib2.urlopen(sys.argv[1]).read()
-    digest = sha.sha(page).hexdigest()
-    if digest != old_digest:
-        print "%s - Change in page (SHA = %s)" % (datetime.datetime.utcnow(), digest)
-        f = open(str(datetime.datetime.utcnow()),"w")
-        f.write(page)
-        f.close()
-        old_digest = digest
-    time.sleep(DELAY)
+# Try to commit
+os.system("git add .")
+os.system("git commit -a -m \"Automatic update\"")
+os.system("git push")
 
 
 
