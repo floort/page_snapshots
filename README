@@ -1,4 +1,3 @@
-Usage:
-    $ python monitor.py url
-Checks the given url every 30 minutes for changes. If a change is
-detected, a timestamped copy is saved in the current directory.
+Now monitors:
+ * Google+
+ * Dropbox
