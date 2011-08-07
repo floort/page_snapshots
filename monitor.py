@@ -30,6 +30,7 @@ MONITOR = (
     ("https://www.dropbox.com/terms", "files/dropbox_en.html"),
     ("http://www.skype.com/intl/nl/legal/privacy/general/", "files/skype_nl.html"),
     ("https://twitter.com/privacy", "files/twitter_privacy.html"),
+    ("http://www.facebook.com/policy.php?_fb_noscript=1", "files/facebook_privacy.html"),
 )
 
 # Get all the pages
