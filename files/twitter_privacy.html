@@ -20,7 +20,7 @@ document.domain = 'twitter.com';function fn(){document.write = "";window.top.loc
       }
 
       // Benchmarking load time.
-      // twttr.timeTillReadyUnique = '1312762350-80706-43753';
+      // twttr.timeTillReadyUnique = '1312763057-49916-50280';
       // twttr.timeTillReadyStart = new Date().getTime();
     </script>
 
@@ -81,7 +81,7 @@ var page={};var onCondition=function(D,C,A,B){D=D;A=A?Math.min(A,5):5;B=B||100;i
       
 
       <form method="post" id="sign_out_form" action="/sessions/destroy" style="display:none;">
-        <input name="authenticity_token" value="dc9cc0f5242c5a4c9e3d8244686bcc97ea7b61b4" type="hidden"/>
+        <input name="authenticity_token" value="82ee12a2f687c5098a030aa5646fd541b1ba9dd1" type="hidden"/>
       </form>
 
       <ul class="nav secondary-nav">
@@ -242,8 +242,8 @@ $.cookie('tz_offset_sec', (-1 * (new Date()).getTimezoneOffset())*60);
 //<![CDATA[
       page.controller_name = 'HelpController';
       page.action_name = 'privacy';
-      twttr.form_authenticity_token = 'dc9cc0f5242c5a4c9e3d8244686bcc97ea7b61b4';
-      $.ajaxSetup({ data: { authenticity_token: 'dc9cc0f5242c5a4c9e3d8244686bcc97ea7b61b4' } });
+      twttr.form_authenticity_token = '82ee12a2f687c5098a030aa5646fd541b1ba9dd1';
+      $.ajaxSetup({ data: { authenticity_token: '82ee12a2f687c5098a030aa5646fd541b1ba9dd1' } });
 
       // FIXME: Reconcile with the kinds on the Status model.
       twttr.statusKinds = {
