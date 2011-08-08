@@ -33,6 +33,7 @@ MONITOR = (
     ("http://www.facebook.com/policy.php?_fb_noscript=1", "files/facebook_privacy.html"),
     ("http://legaldoc.dl.playstation.net/ps3-eula/psn/h/h_privacy_en.html", "files/sony_psn_privacy.html"),
     ("http://www.apple.com/privacy/", "files/apple_privacy.html"),
+    ("http://www.t-mobile.nl/Global/media/pdf/privacy-statement.pdf", "files/tmobile_privacy.pdf"),
 )
 
 # Get all the pages
