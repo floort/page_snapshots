@@ -1,5 +1,19 @@
-Now monitors:
- * Google+
- * Dropbox
- * Skype
+Dependencies:
+    xpdf (for pdftotext)
+    python
+    git
+
+
+Generating diffs of pdf documents:
+    Inspiration: http://the-gay-bar.com/2009/03/24/versioning-pdf-files-with-git/
+    Add the following to your ~/.gitconfig or .git/config in your repository
+    """
+[diff "pdf"]
+    textconv="pdf() { pdftotext $1 -; }; pdf"
+    """
+    Now add the following line to the .gitattributes file in your
+    repository:
+    """
+*.pdf diff=pdf
+    """
 
