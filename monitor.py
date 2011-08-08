@@ -34,6 +34,12 @@ MONITOR = (
     ("http://legaldoc.dl.playstation.net/ps3-eula/psn/h/h_privacy_en.html", "files/sony_psn_privacy.html"),
     ("http://www.apple.com/privacy/", "files/apple_privacy.html"),
     ("http://www.t-mobile.nl/Global/media/pdf/privacy-statement.pdf", "files/tmobile_privacy.pdf"),
+    ("http://www.opta.nl/nl/disclaimer/", "files/opta_privacy.html"),
+    ("https://www.sidn.nl/fileadmin/docs/PDF-files_NL/Algemene%20voorwaarden%20voor%20.nl-domeinnaamhouders.pdf", "files/sidn_algemene_voorwaarder_nl.pdf"),
+    ("https://www.sidn.nl/fileadmin/docs/PDF-files_NL/Algemene_voorwaarden_.nl_Control_domeinnaamhouders.pdf", "files/sidn_algemene_voorwaarder_nl_control.pdf"),
+    ("https://www.sidn.nl/fileadmin/docs/PDF-files_NL/Algemene_voorwaarden_voor_registrars.pdf", "files/sidn_algemene_voorwaarder_registrars.pdf"),
+    ("https://www.sidn.nl/fileadmin/docs/PDF-files_NL/Algemene_voorwaarden_voor_affiliates.pdf", "files/sidn_algemene_voorwaarder_affiliates.pdf"),
+    ("https://www.sidn.nl/fileadmin/docs/PDF-files_NL/Technische%20eisen%20voor%20registratie%20van%20.nl-domeinnamen.pdf", "files/sidn_technische_eisen.pdf"),
 )
 
 # Get all the pages
