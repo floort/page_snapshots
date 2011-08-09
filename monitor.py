@@ -48,6 +48,10 @@ MONITOR = (
     ("http://www.online.nl/voorwaarden/privacy-statement/", "files/online_privacy.html"),
     ("http://www.sizz.nl/privacy/", "files/sizz_privacy.html"),
     ("http://static.ziggo.nl:443/images/Privacybeleid%20Ziggo_tcm14-2127.pdf", "files/ziggo_privacy.pdf"),
+    ("http://thuis.eneco.nl/privacystatement/", "files/eneco_privacy.html"),
+    ("http://www.nuon.nl/disclaimer.jsp", "files/nuon_disclaimer.html"),
+    ("http://www.essent.nl/content/sitevoorwaarden/privacyverklaring.html", "files/essent_privacy.html"),
+    ("http://www.nederlandenergie.nl/algemeen/privacybeleid", "files/nem_privacy.html"),
 )
 
 # Get all the pages
