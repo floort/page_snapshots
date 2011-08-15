@@ -53,6 +53,7 @@ MONITOR = (
     ("http://www.essent.nl/content/sitevoorwaarden/privacyverklaring.html", "files/essent_privacy.html"),
     ("http://www.nederlandenergie.nl/algemeen/privacybeleid", "files/nem_privacy.html"),
     ("https://pim.bof.nl/over-ons/privacy-verklaring/", "files/pim_privacy.html"),
+    ("http://www.linkedin.com/static?key=privacy_policy", "files/linkedin_privacy.html"),
 )
 
 # Get all the pages
