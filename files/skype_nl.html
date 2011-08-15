@@ -160,32 +160,103 @@ var eventTrackingEnabled = false;
 			
 
 
-	<div id="secure">
-		<div class="default">
-			
-				<span class="label">
-			    	<span>
-			    		<a href="/go/special-offers?intcmp=offers" title="">Speciale aanbiedingen</a>
-			    	</span>
-			    </span>
-		    
-			<a href="/go/store.buy.skypecredit?intcmp=buy-credit" title="">Tegoed kopen</a>
-			<a href="/go/myaccount?intcmp=sign-in" title="">Aanmelden</a>
-			<a id="join" class="button2 altCta2" href="/go/register?intcmp=join" title=""><span>Inschrijven</span></a>
+
+
+	<div class="actionBar">
+		<div id="secure">
+			<div class="default floatr">
+				<span class="verticalSeparator"></span>
+				
+					<span class="label">
+				    	<span>
+				    		<a href="/go/special-offers?intcmp=offers" title="">Speciale aanbiedingen</a>
+				    	</span>
+				    </span>
+			    
+				<a href="/go/store.buy.skypecredit?intcmp=buy-credit" title="">Tegoed kopen</a>
+				<span class="verticalSeparator"></span>
+				<a href="/go/myaccount?intcmp=sign-in" title="">Aanmelden</a>
+				<a id="join" class="button2 altCta2" href="/go/register?intcmp=join" title=""><span>Inschrijven</span></a>
+			</div>
+			<div class="loggedIn floatl hidden">
+				<p><span class="username"></span></p>
+				<span class="verticalSeparator"></span>
+				<a id="signIn" href="/go/logout?intcmp=logout" title="">Afmelden</a>
+			</div>
+			<div class="loggedIn floatr hidden">
+				<span class="verticalSeparator"></span>
+				
+					<span class="label">
+				    	<span>
+				    		<a href="/go/special-offers?intcmp=offers" title="">Speciale aanbiedingen</a>
+				    	</span>
+				    </span>
+			    
+				<a href="/go/store.buy.skypecredit?intcmp=buy-credit" title="">Tegoed kopen</a>
+			</div>
+			<div class="languageSelector">
+			<form action="/intl/[LC]/" method="post" class="userPreferencesForm">
+				<div class="headerNavigation">
+					<span class="selectedLanguage">Nederlands</span>
+					<img class="arrow" alt="" src="/i/images/misc/dummy.gif"/>
+					<select class="userLanguage" name="userLanguage" dir="ltr">
+						
+							<option value="en" lang="en">International (English)</option>
+                           
+							<option value="en-us" lang="en-us">English (American)</option>
+                           
+							<option value="en-gb" lang="en-gb">English (British)</option>
+                           
+							<option value="ar" lang="ar" dir="rtl">عربي</option>
+                           
+							<option value="cs" lang="cs">Česky</option>
+                           
+							<option value="da" lang="da">Dansk</option>
+                           
+							<option value="de" lang="de">Deutsch</option>
+                           
+							<option value="es" lang="es">Español (Latinoamérica)</option>
+                           
+							<option value="es-es" lang="es-es">Español (Europa)</option>
+                           
+							<option value="et" lang="et">Eesti</option>
+                           
+							<option value="fi" lang="fi">Suomi</option>
+                           
+							<option value="fr" lang="fr">Français</option>
+                           
+							<option value="hu" lang="hu">Magyar</option>
+                           
+							<option value="it" lang="it">Italiano</option>
+                           
+							<option value="ja" lang="ja">日本語</option>
+                           
+							<option value="ko" lang="ko">한국어</option>
+                           
+							<option value="nl" lang="nl" selected="selected">Nederlands</option>
+                           
+							<option value="no" lang="no">Norsk</option>
+                           
+							<option value="pl" lang="pl">Polski</option>
+                           
+							<option value="pt" lang="pt">Português</option>
+                           
+							<option value="pt-br" lang="pt-br">Português (Brasileiro)</option>
+                           
+							<option value="ru" lang="ru">Руccкий</option>
+                           
+							<option value="sv" lang="sv">Svenska</option>
+                           
+							<option value="tr" lang="tr">Türkçe</option>
+                           
+							<option value="zh-Hans" lang="zh-Hans">中文（简体）</option>
+                           
+							<option value="zh-Hant" lang="zh-Hant">中文（繁体）</option>
+                           
+					</select>
+				</div>
+			</form>
 		</div>
-		<div class="loggedIn hidden">
-			<p>Welkom  <span class="username"></span></p>
-			
-				<span class="label">
-			    	<span>
-			    		<a href="/go/special-offers?intcmp=offers" title="">Speciale aanbiedingen</a>
-			    	</span>
-			    </span>
-		    
-			<a id="addCredit" class="button2 altCta2" href="/go/store.buy.skypecredit?intcmp=add-credit" title=""><span>Meer tegoed</span></a>
-			<a href="/go/myaccount?intcmp=account" title="">Account</a>
-			<span class="verticalSeparator"></span>
-			<a id="signIn" href="/go/logout?intcmp=logout" title="">Afmelden</a>
 		</div>
 	</div>
 
@@ -451,7 +522,6 @@ Make sure Background image is not empty.
 
 <div id="awesomeFooter"><footer>
 	
-		
 	
 
 	
@@ -946,164 +1016,63 @@ Make sure Background image is not empty.
 		</nav>
 	</div>
 
-
-	
-
-	<div class="gridContainer" id="bottomNavigation">
+<div class="gridContainer" id="bottomNavigation">
 		<div class="gridRow">
 			<div class="gridCol12">
-				<form id="userPreferencesForm" method="post" action="/intl/[LC]/">
-					<div id="footerNavigation">
-						
-						<select name="userLanguage" id="userLanguage">
-							
-								<option value="en" lang="en">International (English)</option>
-							
-								<option value="en-us" lang="en-us">English (American)</option>
-							
-								<option value="en-gb" lang="en-gb">English (British)</option>
-							
-								<option value="ar" lang="ar" dir="rtl">عربي</option>
-							
-								<option value="cs" lang="cs">Česky</option>
-							
-								<option value="da" lang="da">Dansk</option>
-							
-								<option value="de" lang="de">Deutsch</option>
-							
-								<option value="es" lang="es">Español (Latinoamérica)</option>
-							
-								<option value="es-es" lang="es-es">Español (Europa)</option>
-							
-								<option value="et" lang="et">Eesti</option>
-							
-								<option value="fi" lang="fi">Suomi</option>
-							
-								<option value="fr" lang="fr">Français</option>
-							
-								<option value="hu" lang="hu">Magyar</option>
-							
-								<option value="it" lang="it">Italiano</option>
-							
-								<option value="ja" lang="ja">日本語</option>
-							
-								<option value="ko" lang="ko">한국어</option>
-							
-								<option value="nl" lang="nl" selected="selected">Nederlands</option>
-							
-								<option value="no" lang="no">Norsk</option>
-							
-								<option value="pl" lang="pl">Polski</option>
-							
-								<option value="pt" lang="pt">Português</option>
-							
-								<option value="pt-br" lang="pt-br">Português (Brasileiro)</option>
-							
-								<option value="ru" lang="ru">Руccкий</option>
-							
-								<option value="sv" lang="sv">Svenska</option>
-							
-								<option value="tr" lang="tr">Türkçe</option>
-							
-								<option value="zh-Hans" lang="zh-Hans">中文（简体）</option>
-							
-								<option value="zh-Hant" lang="zh-Hant">中文（繁体）</option>
-							
-						</select>
-						<div id="langLinks">
+					<div id="newFooterNavigation">
+						<div class="languageLinks">
 							<nav>
-								
-									<a href="/intl/en/legal/privacy/general/" title="International (English)">International (English)</a>
-								
-									<a href="/intl/en-us/legal/privacy/general/" title="English (American)">English (American)</a>
-								
-									<a href="/intl/en-gb/legal/privacy/general/" title="English (British)">English (British)</a>
-								
-									<a href="/intl/ar/legal/privacy/general/" title="عربي" dir="rtl">عربي</a>
-								
-									<a href="/intl/cs/legal/privacy/general/" title="Česky">Česky</a>
-								
-									<a href="/intl/da/legal/privacy/general/" title="Dansk">Dansk</a>
-								
-									<a href="/intl/de/legal/privacy/general/" title="Deutsch">Deutsch</a>
-								
-									<a href="/intl/es/legal/privacy/general/" title="Español (Latinoamérica)">Español (Latinoamérica)</a>
-								
-									<a href="/intl/es-es/legal/privacy/general/" title="Español (Europa)">Español (Europa)</a>
-								
-									<a href="/intl/et/legal/privacy/general/" title="Eesti">Eesti</a>
-								
-									<a href="/intl/fi/legal/privacy/general/" title="Suomi">Suomi</a>
-								
-									<a href="/intl/fr/legal/privacy/general/" title="Français">Français</a>
-								
-									<a href="/intl/hu/legal/privacy/general/" title="Magyar">Magyar</a>
-								
-									<a href="/intl/it/legal/privacy/general/" title="Italiano">Italiano</a>
-								
-									<a href="/intl/ja/legal/privacy/general/" title="日本語">日本語</a>
-								
-									<a href="/intl/ko/legal/privacy/general/" title="한국어">한국어</a>
-								
-									<a href="/intl/nl/legal/privacy/general/" title="Nederlands">Nederlands</a>
-								
-									<a href="/intl/no/legal/privacy/general/" title="Norsk">Norsk</a>
-								
-									<a href="/intl/pl/legal/privacy/general/" title="Polski">Polski</a>
-								
-									<a href="/intl/pt/legal/privacy/general/" title="Português">Português</a>
-								
-									<a href="/intl/pt-br/legal/privacy/general/" title="Português (Brasileiro)">Português (Brasileiro)</a>
-								
-									<a href="/intl/ru/legal/privacy/general/" title="Руccкий">Руccкий</a>
-								
-									<a href="/intl/sv/legal/privacy/general/" title="Svenska">Svenska</a>
-								
-									<a href="/intl/tr/legal/privacy/general/" title="Türkçe">Türkçe</a>
-								
-									<a href="/intl/zh-Hans/legal/privacy/general/" title="中文（简体）">中文（简体）</a>
-								
-									<a href="/intl/zh-Hant/legal/privacy/general/" title="中文（繁体）">中文（繁体）</a>
-								
-							</nav>
+								<a class="languageLink " hreflang="en" href="/intl/en/home/" title="International (English)">International (English)</a>
+								 &#124;<a class="languageLink " hreflang="en-us" href="/intl/en-us/home/" title="English (American)">English (American)</a>
+								 &#124;<a class="languageLink " hreflang="en-gb" href="/intl/en-gb/home/" title="English (British)">English (British)</a>
+								 &#124;<a class="languageLink " hreflang="ar" href="/intl/ar/home/" title="عربي" dir="rtl">عربي</a>
+								 &#124;<a class="languageLink " hreflang="cs" href="/intl/cs/home/" title="Česky">Česky</a>
+								 &#124;<a class="languageLink " hreflang="da" href="/intl/da/home/" title="Dansk">Dansk</a>
+								 &#124;<a class="languageLink " hreflang="de" href="/intl/de/home/" title="Deutsch">Deutsch</a>
+								 &#124;<a class="languageLink " hreflang="es" href="/intl/es/home/" title="Español (Latinoamérica)">Español (Latinoamérica)</a>
+								 &#124;<a class="languageLink " hreflang="es-es" href="/intl/es-es/home/" title="Español (Europa)">Español (Europa)</a>
+								 &#124;<a class="languageLink " hreflang="et" href="/intl/et/home/" title="Eesti">Eesti</a>
+								 &#124;<a class="languageLink " hreflang="fi" href="/intl/fi/home/" title="Suomi">Suomi</a>
+								 &#124;<a class="languageLink " hreflang="fr" href="/intl/fr/home/" title="Français">Français</a>
+								 &#124;<a class="languageLink " hreflang="hu" href="/intl/hu/home/" title="Magyar">Magyar</a>
+								 &#124;<a class="languageLink " hreflang="it" href="/intl/it/home/" title="Italiano">Italiano</a>
+								 &#124;<a class="languageLink " hreflang="ja" href="/intl/ja/home/" title="日本語">日本語</a>
+								 &#124;<a class="languageLink " hreflang="ko" href="/intl/ko/home/" title="한국어">한국어</a>
+								 &#124;<a class="languageLink selected" hreflang="nl" href="/intl/nl/home/" title="Nederlands">Nederlands</a>
+								 &#124;<a class="languageLink " hreflang="no" href="/intl/no/home/" title="Norsk">Norsk</a>
+								 &#124;<a class="languageLink " hreflang="pl" href="/intl/pl/home/" title="Polski">Polski</a>
+								 &#124;<a class="languageLink " hreflang="pt" href="/intl/pt/home/" title="Português">Português</a>
+								 &#124;<a class="languageLink " hreflang="pt-br" href="/intl/pt-br/home/" title="Português (Brasileiro)">Português (Brasileiro)</a>
+								 &#124;<a class="languageLink " hreflang="ru" href="/intl/ru/home/" title="Руccкий">Руccкий</a>
+								 &#124;<a class="languageLink " hreflang="sv" href="/intl/sv/home/" title="Svenska">Svenska</a>
+								 &#124;<a class="languageLink " hreflang="tr" href="/intl/tr/home/" title="Türkçe">Türkçe</a>
+								 &#124;<a class="languageLink " hreflang="zh-Hans" href="/intl/zh-Hans/home/" title="中文（简体）">中文（简体）</a>
+								 &#124;<a class="languageLink " hreflang="zh-Hant" href="/intl/zh-Hant/home/" title="中文（繁体）">中文（繁体）</a>
+								</nav>
 						</div>
-						
-							<a href="/go/about">Over ons</a> &middot; 
-						
-							<a href="/go/advertise">Adverteren</a> &middot; 
-						
-							<a href="/go/blogs">Blogs</a> &middot; 
-						
-							<a href="/go/developers">Ontwikkelaars</a> &middot; 
-						
-							<a href="/go/jobs">Vacatures</a> &middot; 
-						
-							<a href="/go/allrates">Tarieven</a> &middot; 
-						
-							<a href="/go/security">Beveiliging</a> 
-						
-					</div><!-- #footerNavigation -->
-				</form><!-- #userPreferencesForm -->
-			<div id="legalLinks">
-				
-					<a href="/go/legal.privacy">Privacybeleid</a> &middot; 
-				
-					<a href="/go/legal">Juridische info</a> 
-				
-				<span>© 2011 Skype Limited</span>
-			</div><!-- #legalLinks -->
+						<hr class="lineSeparator">
+						<div class="links">
+							<a href="/go/about">Over ons</a> &middot;
+							<a href="/go/advertise">Adverteren</a> &middot;
+							<a href="/go/blogs">Blogs</a> &middot;
+							<a href="/go/developers">Ontwikkelaars</a> &middot;
+							<a href="/go/jobs">Vacatures</a> &middot;
+							<a href="/go/allrates">Tarieven</a> &middot;
+							<a href="/go/security">Beveiliging</a> &middot;
+							<a href="/go/legal.privacy">Privacybeleid</a> &middot;<a href="/go/legal">Juridische info</a></div><!-- #legalLinks -->
+						<div class="copyright">
+							<p>© 2011 Skype Limited</p>
+						</div>
+					</div><!-- #newFooterNavigation -->
 			</div>
 		</div>
 	</div><!-- #bottomNavigation -->
 </footer>
 
-
-	<script type="text/javascript">
+<script type="text/javascript">
 SKYPE.env.Loader.require('Acquisition', { 'src': 'i/js/jquery/inclient/acquisition.js', 'requires': { 'jquery': true }}, true );
 SKYPE.env.Loader.require('TopNav', { 'src': 'i/js/wanalytics/wa-topnav.js', 'requires': { 'jquery': true }}, true );
 </script>
-
-
 
 
 
@@ -1126,8 +1095,7 @@ if (typeof SegmentationCounter != "undefined") {
 } else {
 	SKYPE.env.Loader.ready();
 }
-</script>
-</div>
+</script></div>
 
 </body>
 </html>
