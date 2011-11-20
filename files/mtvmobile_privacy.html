@@ -18,21 +18,24 @@
 		<script type="text/javascript" src="/assets/js/ag_book_regular.typeface.js"></script>
 		<script type="text/javascript" src="/assets/js/jquery-height-filler.js"></script>
 		<script type="text/javascript" src="/assets/js/jquery-modal-window.js"></script>
+		<script type="text/javascript" src="http://ops.mtvnn.com/shared/coda_mtvmobile-nl.js"></script>
+		<script type="text/javascript" src="http://ops.mtvnn.com/shared/coda_mtvmobile-nl_track.js"></script>
 		
 		<!--[if IE 7]>
 		<script type="text/javascript" src="/assets/js/arrowcorrection_ie.js"></script>
 		<![endif]-->
-		<script type="text/javascript">
-		  var _gaq = _gaq || [];
-		  _gaq.push(['_setAccount', 'UA-12646638-1']);
-		  _gaq.push(['_trackPageview']);
+        <script type="text/javascript">
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-25577070-1']);
+          _gaq.push(['_setDomainName', '.mtvmobile.nl']);
+          _gaq.push(['_trackPageview']);
 
-		  (function() {
-			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		  })();
-		</script>
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+        </script>
 	</head>
 	<body>
 		<!-- Start AdLantic Online Advertising -->
@@ -108,27 +111,12 @@
 </div>	<div id="box-login" class="window component_padding">
 	<div style="overflow:hidden">
 		<a class="close" href="#">sluiten</a>
-		<h2>LOGIN</h2>
+		<h2>ONJUISTE LOGIN</h2>
 	</div>
 	<p style="border-top: 1px solid #000000; padding-top: 8px;">
-		<p><strong>Heb je een My MTVmobile account aangemaakt voor &ldquo;12 mei 2011&rdquo;?</strong></p>
-<p>Vanaf &ldquo;12 mei 2011&rdquo; zijn er een aantal nieuwe mogelijkheden beschikbaar binnen myMTVmobile. Zo is het nu mogelijk om je saldo-informatie op te vragen en je eigen gegevens te wijzigen.</p>
-<p>Om gebruik te kunnen maken van deze nieuwe mogelijkheden dien je een nieuw myMTVmobile account aan te maken. Je oude myMTVmobile account is hiermee komen te vervallen.</p>
-<p>&nbsp;</p>
-<p><a style="text-decoration: none;" onclick="window.location='/registreren'" href="/registreren"> <button class="button_black" onclick="javascript:void(0);">
-<div class="button_black_left">
-<div class="button_black_right">
-<div class="button_black_middle">
-<h6>Registreer je hier voor een nieuw account</h6>
-</div>
-</div>
-</div>
-</button> </a></p>
-<br /> <br /> <br />
-<p><strong>Wachtwoord vergeten?</strong></p>
-<p>Heb je al een nieuw myMTVmobile account aan gemaakt (na &ldquo;datum x&rdquo;), maar ben je je wachtwoord vergeten? Dan kan je je wachtwoord opvragen via onze wachtwoordservice.</p>
-<p>&nbsp;</p>
-<p><a style="text-decoration: none;" onclick="window.location='/aanmelden/wachtwoordvergeten'" href="/aanmelden/wachtwoordvergeten"> <button class="button_black" onclick="javascript:void(0);">
+		<p><strong>Wachtwoord vergeten?</strong></p>
+<p>Heb je al een nieuw MyMTVMobile account aan gemaakt, maar ben je je wachtwoord vergeten? Dan kan je je wachtwoord opvragen via onze wachtwoordservice.</p>
+<p><a style="text-decoration: none;" onclick="window.location='/aanmelden/wachtwoordvergeten'" href="/aanmelden/wachtwoordvergeten"><button class="button_black" onclick="javascript:void(0);">
 <div class="button_black_left">
 <div class="button_black_right">
 <div class="button_black_middle">
@@ -136,7 +124,18 @@
 </div>
 </div>
 </div>
-</button> </a></p>	</p>
+</button></a></p>
+<p>&nbsp;</p>
+<p><strong>Nog geen account?</strong></p>
+<p><a style="text-decoration: none;" onclick="window.location='/registreren'" href="/registreren"><button class="button_black" onclick="javascript:void(0);">
+<div class="button_black_left">
+<div class="button_black_right">
+<div class="button_black_middle">
+<h6>Registreer je hier voor een nieuw account</h6>
+</div>
+</div>
+</div>
+</button></a></p>	</p>
 </div>	<div id="box-login-progress" class="window component_padding">
 	<div style="overflow:hidden">
 		<h2>Een moment geduld</h2>
@@ -150,20 +149,31 @@
 </div>		
 <div style="width:960px;margin: 0 auto" class="container_12"><div class="grid_12" >
 	<div class="header">
-	<div class="header-logo">
-		<a href="/"><img src="/assets/img/logo.gif" /></a>
+	<div id="header-left">
+		<div class="header-logo">
+			<a href="/"><img src="/assets/img/logo.gif" /></a>
+		</div>
 	</div>
-	<ul class="header-subnav">
-		<li>
-							<a href="/aanmelden">Inloggen</a>
-			|
-				<a href="/registreren">Registreren</a>
-						|
-			<a href="http://gsm.mtvmobile.nl/mtv/mcsmambo.p?M5detail=ABO&M5NextUrl=RAINF&M5Arg=803">Over MTV Mobile</a>
-			|
-			<a href="http://gsm.mtvmobile.nl/">Get It Now!</a>
-		</li>
-	</ul>
+	<div id="header-right">
+		<ul class="header-subnav">
+			<li>
+									<a href="/aanmelden">Inloggen</a>
+				|
+					<a href="/registreren">Registreren</a>
+								|
+				<a href="http://gsm.mtvmobile.nl/mtv/mcsmambo.p?M5detail=ABO&M5NextUrl=RAINF&M5Arg=803">Over MTV Mobile</a>
+				|
+				<a href="http://gsm.mtvmobile.nl/">Get It Now!</a>
+			</li>
+		</ul>
+		<div id="search">
+			<form method="get" action="http://search.mtvmobile.nl/search">
+				<input id="searchfield" type="text" name="st-q" value="" placeholder="Zoek" />
+				<input id="searchbutton" type="submit" value=" " name="submit" />
+			</form>
+		</div>
+	</div>
+	<div class="clear"></div>
 </div>
 <div class="navigation">
 	<ul class="navigation-bar" >

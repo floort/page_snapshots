@@ -22,8 +22,8 @@
 	
 	<!-- Search engine canonical-->
 	
-	<link rel="canonical" href="http://www.nuon.nl:80/disclaimer.jsp" />
 
+<link rel="canonical" href="http://www.nuon.nl/disclaimer.jsp" />
 	
 	<!-- favicon -->
 	<link rel="shortcut icon" type="image/x-icon" href="/static/images/favicon.ico" />
@@ -37,14 +37,36 @@
 <!--[if gte IE 6]>
 	<link href="/static/css/ie.css" rel="stylesheet" type="text/css" media="screen" title="Speciale IE aanpassingen" />
 <![endif]-->
-<!--[if IE 5.5]>
-	<link href="/static/css/ie55.css" rel="stylesheet" type="text/css" media="screen" title="Speciale IE aanpassingen" />
-<![endif]-->
+
+<!-- Styling tweaks, from the My Nuon project, of parts on the generic site - start -->
+	<link href="/static/presentation/mynuon_glue.css" rel="stylesheet" type="text/css" />
+<!--  Styling tweaks, from the My Nuon project, of parts on the generic site - end -->
 
 	<!-- global scripts -->
 	<script type="text/javascript" src="/static/js/immediate.js"></script>
-
-    
+	  
+	
+	<!-- Start Visual Website Optimizer Code -->
+	<script type='text/javascript'>
+		var _vis_opt_account_id = 5166;
+		var _vis_opt_protocol = (('https:' == document.location.protocol) ? 'https://' : 'http://');
+		document.write('<s' + 'cript src="' + _vis_opt_protocol + 
+		'dev.visualwebsiteoptimizer.com/deploy/js_visitor_settings.php?v=1&a='+_vis_opt_account_id+'&url='
+		+encodeURIComponent(document.URL)+'&random='+Math.random()+'" type="text/javascript">' + '<\/s' + 'cript>');
+	</script>
+		
+	<script type='text/javascript'>
+		if(typeof(_vis_opt_settings_loaded) == "boolean") { document.write('<s' + 'cript src="' + _vis_opt_protocol + 
+		'd5phz18u4wuww.cloudfront.net/vis_opt_no_jquery.js" type="text/javascript">' + '<\/s' + 'cript>'); }
+	</script>
+		
+	<script type='text/javascript'>
+		if(typeof(_vis_opt_settings_loaded) == "boolean" && typeof(_vis_opt_top_initialize) == "function") {
+		        _vis_opt_top_initialize(); vwo_$(document).ready(function() { _vis_opt_bottom_initialize(); });
+		}
+	</script>
+<!-- End Visual Website Optimizer Code -->
+ 
     
 	
 	
@@ -105,8 +127,7 @@ Wij behouden ons het recht voor om deze bepalingen op ieder moment te wijzigen. 
     <div class="page-options-title">Pagina opties</div>
     <ul>
       <li class="last">
-        <a href="javascript:window.print()">
-							Printen</a>
+        <a href="javascript:window.print()">Printen</a>
       </li>
     </ul>
   </div>
@@ -130,9 +151,8 @@ Wij behouden ons het recht voor om deze bepalingen op ieder moment te wijzigen. 
 				<h4>Navigatie</h4>
 				<ol>
 					<li id="nav-home" class='open'><a href="http://www.nuon.nl/" title="Energie voor Thuis">Voor Thuis</a></li>
-					<li id="nav-business" ><a href="http://zakelijk.nuon.nl/zakelijk/" title="Zakelijke Energie">Zakelijk</a></li>
+					<li id="nav-business" ><a href="http://www.nuon.nl/zakelijk/" title="Zakelijke Energie">Zakelijk</a></li>
 					<li id="nav-about"><a href="http://www.nuon.com/nl/" rel="nofollow" title="Over Nuon">Over Nuon</a></li>
-
 				</ol>
 			</div>
 		
@@ -157,6 +177,9 @@ Wij behouden ons het recht voor om deze bepalingen op ieder moment te wijzigen. 
     </li>
     <li>
       <a href="/klantenservice/">Klantenservice</a>
+    </li>
+    <li>
+      <a href="/persoonlijk/">Mijn Nuon</a>
     </li>
   </ol>
 </div>
@@ -189,9 +212,8 @@ Wij behouden ons het recht voor om deze bepalingen op ieder moment te wijzigen. 
 						
 							<li id="login"><a href="/klantenservice/contactmetnuon/" title="Contact">Contact</a>
 							</li>
-							<li id="form-login" class="hide-login"><a href="/persoonlijk/">Inloggen</a>
+							<li id="form-login" class="hide-login"><a href="/persoonlijk/">Inloggen Mijn Nuon</a>
 							</li>
-							<li class="no-sep"><a href="/klantenservice/uw-gegevens-bekijken/registreren/">Aanmelden</a></li>
 						
 						
 						
@@ -240,6 +262,9 @@ Wij behouden ons het recht voor om deze bepalingen op ieder moment te wijzigen. 
 		if(sc_page_title==""){sc_page_title=makeStringScProof("Disclaimer");} NUON_WA.siteSection2="overig";
 	</script>
 	
+<!-- Interface enhancements tweaks, from the My Nuon project, of parts on the generic site - start -->
+	<script type="text/javascript" src="/static/behaviour/mynuon_glue.js"></script>
+<!-- Interface enhancements tweaks, from the My Nuon project, of parts on the generic site - end -->
 <!-- Start SiteCatalyst -->
 <script type="text/javascript">
 	

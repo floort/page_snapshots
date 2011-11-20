@@ -16,13 +16,11 @@
         - Simplify your life
     </title>
 
-    <link rel="shortcut icon" href="/static/19184/images/favicon.ico"/>
+    <link rel="shortcut icon" href="/static/20351/images/favicon.ico"/>
 
-    <link href="/static/19184/css/main.css" rel="stylesheet" type="text/css"/>
-    <link href="/static/19184/css/lib.css" rel="stylesheet" type="text/css" media="screen"/>
-    <link href="/static/19184/css/sprites.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link href="/static/20351/css/main.css" rel="stylesheet" type="text/css"/>
 
-    <link rel="apple-touch-icon" href="/static/19184/images/dropbox_webclip.png"/>
+    <link rel="apple-touch-icon" href="/static/20351/images/dropbox_webclip.png"/>
     <link rel="P3Pv1" href="/w3c/p3p.xml"/>
 
 
@@ -36,7 +34,7 @@ var Constants = {
   protocol: 'https',
   uid: '',
   root_ns: '',
-  SVN_REV: '19184',
+  SVN_REV: '20351',
   TOKEN: '',
   IS_PROD: 1,
   WIT_ENABLED: 0,
@@ -50,7 +48,6 @@ var Constants = {
   USER_LOCALE: 'en'
 };
 </script>
-    <script type="text/javascript" src="/static/19184/javascript/lib-mini.js"></script>
     <script type="text/javascript">
         function global_report_exception (e, f, l, tb, force) {
             if (!window.reported_exception || force) {
@@ -58,8 +55,8 @@ var Constants = {
                 try {
                     if (!tb) {
                         var stack = get_stack_rep();
-                        stack.pop(); // remove global_report_exception
-                        stack.pop(); // remove onerror handler
+                        stack.pop(); 
+                        stack.pop(); 
                         stack_str = stack.join("\n");
                     }
                 } catch (e) { }
@@ -67,17 +64,13 @@ var Constants = {
                 window.reported_exception = true;
            }
         }
-        window.LoadedJsSuccessfully = false; // this constant gets set to true at the bottom of dropbox.js
-        Event.observe(window, "load", function () {
-            if (!window.LoadedJsSuccessfully) {
-                global_report_exception("Failed to load javascript!");
-            }
-        });
+        window.LoadedJsSuccessfully = false; 
+
         window.onerror = function (e, f, l) {
             global_report_exception(e, f, l);
         };
     </script>
-<script type="text/javascript" src="/static/19184/javascript/dropbox-mini.js"></script>
+<script type="text/javascript" src="/static/20351/javascript/dropbox-mini.js"></script>
 
      <script type="text/javascript">
        if (self != top) {
@@ -88,7 +81,7 @@ var Constants = {
 
 
     <style type="text/css">
-      .hny-qwvoew { display: none; }
+      .hny-ndsf { display: none; }
     </style>
     <style type="text/css">
     .graybox { background: #f6f6f6; border: 1px solid #ccc; padding: 20px; }
@@ -138,7 +131,7 @@ var Constants = {
                 <textarea class="textinput act_as_block" name="content" id="feedback_textarea" rows="1" cols="1"></textarea>
 
                 <div align="right">
-                    <input type="text" name="email" class="hny-qwvoew"/> 
+                    <input type="text" name="email" class="hny-ndsf"/> 
                     <input type="submit" value="Send feedback" class="button" />
                 </div>
             </form>
@@ -212,7 +205,7 @@ var Constants = {
 <div id="login-hover-cover"></div>
 <div id="login-hover-cont" class="offscreen">
     <form action="https://www.dropbox.com/login" method="post">
-<input type="hidden" name="t" value="791206fc33" />
+<input type="hidden" name="t" value="7eec60c91c" />
         <p>
             Email<br/>
             <input id="login_email_elm" type="text" name="login_email" class="textinput" tabindex="1" />
@@ -234,7 +227,7 @@ var Constants = {
 </div>
             </li>
         </ul>
-            <a href="/" id="logo"><img border="0" id="logo_img" alt="Dropbox - Secure backup, sync and sharing made easy." src="/static/19184/images/logo.png"/>
+            <a href="/" id="logo"><img border="0" id="logo_img" alt="Dropbox - Secure backup, sync and sharing made easy." src="/static/20351/images/logo.png"/>
 	
         </a>
     </div>
@@ -547,7 +540,7 @@ the Services. Your license to use the Software is automatically revoked if you v
     
     <h2>I think I've found a security exploit. Where do I report security concerns?</h2>
     <p>We take a number of measures to ensure that the data you store on Dropbox is safe and secure. While we're very confident in our technology, we recognize that no system can guarantee data security with 100% certainty. For that reason, we will continue to innovate to make sure that our security measures are state of the art, and we will investigate any and all reported security issues concerning Dropbox's services or software. For a direct line to our security experts, report security issues to <a href="mailto:security@dropbox.com">security@dropbox.com</a>.</p>
-
+    <p>We'll fully credit anybody whose reports lead to the improvement of Dropbox security. A list of those who have contributed reports leading to a bug or security issue can be found on our <a href="/special_thanks">special thanks page</a>.</p>
 </div>
 </div>
 <div id="acceptable_use-content" class="content-tab" style="display:none;">
@@ -610,21 +603,10 @@ the Services. Your license to use the Software is automatically revoked if you v
                     <li><a href="/install">Install</a></li>
                     <li><a href="/anywhere">Mobile</a></li>
                     <li><a href="/pricing">Pricing</a></li>
+                    <li><a href="/teams">For Business</a></li>
                     <li><a href="/features">Features</a></li>
                     <li><a href="/tour">Tour</a></li>
                 </ul>
-            </div>
-            <div class="footer-col">
-                <ul>
-                    <li class="header">Community</li>
-                    <li><a href="/referrals" onmouseup="javascript: MCLog.log('referrals_via_footer');">Referrals</a></li>
-                    <li><a href="http://twitter.com/dropbox" target="_blank">Twitter</a></li>
-                    <li><a href="http://facebook.com/Dropbox" target="_blank">Facebook</a></li>
-                    <li><a href="http://wiki.dropbox.com/">Wiki</a></li>
-                    <li><a href="/developers">Developers</a></li>
-                    <li><a href="/anywhere/apps">Partners</a></li>
-
-            </ul>
             </div>
             <div class="footer-col">
                 <ul>
@@ -646,6 +628,15 @@ the Services. Your license to use the Software is automatically revoked if you v
                     <li><a href="#" onclick="return Home.showFeedback();">Feedback</a></li>
                     <li><a href="/contact">Contact Us</a></li>
                     <li><a href="/dmca">Copyright</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <ul>
+                    <li class="header">Community</li>
+                    <li><a href="/referrals" onmouseup="javascript: MCLog.log('referrals_via_footer');">Referrals</a></li>
+                    <li><a href="http://twitter.com/dropbox" target="_blank">Twitter</a></li>
+                    <li><a href="http://facebook.com/Dropbox" target="_blank">Facebook</a></li>
+                    <li><a href="/developers">Developers</a></li>
                 </ul>
             </div>
            <div class="clear"></div>

@@ -58,9 +58,13 @@ MONITOR = (
 
 # Get all the pages
 for page in MONITOR:
-    print page[0]
-    page_content = urllib2.urlopen(page[0]).read()
-    open(page[1], "w").write(page_content)
+    print page[0],
+    try:
+        page_content = urllib2.urlopen(page[0]).read()
+        open(page[1], "w").write(page_content)
+        print "OK"
+    except:
+        print "FAILED"
 
 # Try to commit
 os.system("git add .")
