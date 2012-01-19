@@ -16,11 +16,11 @@
         - Simplify your life
     </title>
 
-    <link rel="shortcut icon" href="/static/20596/images/favicon.ico"/>
+    <link rel="shortcut icon" href="/static/21374/images/favicon.ico"/>
 
-    <link href="/static/20596/css/main.css" rel="stylesheet" type="text/css"/>
+    <link href="/static/21374/css/main.css" rel="stylesheet" type="text/css"/>
 
-    <link rel="apple-touch-icon" href="/static/20596/images/dropbox_webclip.png"/>
+    <link rel="apple-touch-icon" href="/static/21374/images/dropbox_webclip.png"/>
     <link rel="P3Pv1" href="/w3c/p3p.xml"/>
 
 
@@ -34,10 +34,10 @@ var Constants = {
   protocol: 'https',
   uid: '',
   root_ns: '',
-  SVN_REV: '20596',
+  SVN_REV: '21374',
   TOKEN: '',
   IS_PROD: 1,
-  WIT_ENABLED: 1,
+  WIT_ENABLED: 0,
   upload_debug: false,
   tcn: 'touch',
   date_format: 'M\x2fd\x2fyyyy',
@@ -70,7 +70,7 @@ var Constants = {
             global_report_exception(e, f, l);
         };
     </script>
-<script type="text/javascript" src="/static/20596/javascript/dropbox-mini.js"></script>
+<script type="text/javascript" src="/static/21374/javascript/dropbox-mini.js"></script>
 
      <script type="text/javascript">
        if (self != top) {
@@ -81,7 +81,7 @@ var Constants = {
 
 
     <style type="text/css">
-      .hny-smftt { display: none; }
+      .hny-pfanr { display: none; }
     </style>
     <style type="text/css">
     .graybox { background: #f6f6f6; border: 1px solid #ccc; padding: 20px; }
@@ -121,6 +121,8 @@ var Constants = {
         <div id="feedback">
             <form method="post" action="/feedback">
                 Suggestions, ideas, bug reports, and comments are always welcome. If you'd like to interact with other Dropbox users, check out our <a id="forums_link">forums</a>.
+                <br/><br/>
+                <strong>This feedback is used to improve our product and may not receive a timely response.  If you'd like help from Support, <a href="/ticket#step:2">submit a ticket</a>.</strong>
                 <script type="text/javascript">
                    Util.jag('forums_link', 'href', 'http://forums.dropbox.com');
                 </script>
@@ -131,7 +133,7 @@ var Constants = {
                 <textarea class="textinput act_as_block" name="content" id="feedback_textarea" rows="1" cols="1"></textarea>
 
                 <div align="right">
-                    <input type="text" name="email" class="hny-smftt"/> 
+                    <input type="text" name="email" class="hny-pfanr"/> 
                     <input type="submit" value="Send feedback" class="button" />
                 </div>
             </form>
@@ -227,7 +229,7 @@ var Constants = {
 </div>
             </li>
         </ul>
-            <a href="/" id="logo"><img border="0" id="logo_img" alt="Dropbox - Secure backup, sync and sharing made easy." src="/static/20596/images/logo.png"/>
+            <a href="/" id="logo"><img border="0" id="logo_img" alt="Dropbox - Secure backup, sync and sharing made easy." src="/static/21374/images/logo.png"/>
 	
         </a>
     </div>
@@ -591,7 +593,7 @@ the Services. Your license to use the Software is automatically revoked if you v
     <div name="footer" class="wit_group" id="footer">
         <div style="margin: 0 auto">
             <p id="copyright">
-                 <img src="&#47;static&#47;images&#47;icons&#47;icon_spacer.gif" alt="" class="sprite s_gray_logo text-img" />&copy; 2011 Dropbox<br/>
+                 <img src="&#47;static&#47;images&#47;icons&#47;icon_spacer.gif" alt="" class="sprite s_gray_logo text-img" />&copy; 2012 Dropbox<br/>
             </p>
             <div id="locale_selector_cont">
                 <div id="locale_selector"></div>
@@ -660,8 +662,9 @@ the Services. Your license to use the Software is automatically revoked if you v
 <script type="text/javascript">
 if (_gat) {
     GA.pageTracker = _gat._getTracker("UA-279179-2");
+    GA.pageTracker._setDomainName(document.domain);
     Element.observe(window, 'load', function() {
-      GA.pageTracker._trackPageview()
+      GA.pageTracker._trackPageview();
       GA.setPendingVars();
     });
 }
