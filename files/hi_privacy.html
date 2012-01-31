@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
     <!--
-    Generated at: 2012-01-18 15:39:19
+    Generated at: 2012-01-31 11:05:41
     contentid=
     -->
 	<title>Privacy - Hi</title>
@@ -117,7 +117,7 @@
 					<button type="submit" class="inloggen-submit" title="Inloggen"><span>Inloggen</span></button>
 				</div>
 	</fieldset>
-<ins><input type="hidden" name="swfrmsig" value="f2e00babbd8f42b399dfe781044469eb3bcedd8247c2bee43338bdee82eb79a0e7e388ed9114cdef47741138b874c0337fe53ad984a1418ce9789ae47b922211392ee231bfdbecbfff285dd17f4b7e3e95e83befcdb23eaed7e766c1da63d956a5df04a8cb42540e13f6f2679aa32b6d587b24e4a75532803138cfb75bf381976fb10c5b115fb362" /></ins>
+<ins><input type="hidden" name="swfrmsig" value="26c299e60f106844d96ee1db6804a239ee5c313127b0e406c40f181033c7b4dbe7e388ed9114cdef47741138b874c0337fe53ad984a1418ce9789ae47b922211392ee231bfdbecbfff285dd17f4b7e3e95e83befcdb23eaed7e766c1da63d956a5df04a8cb42540e13f6f2679aa32b6d587b24e4a75532803138cfb75bf381976fb10c5b115fb362" /></ins>
 </form>
 	</div>	
 	</div>
@@ -202,6 +202,22 @@
 								</li>
 				</ul>
 				<script type="text/javascript">
+	$(document).ready(function() {
+		$('#search1').focusin(function() {
+			if($(this).val() == 'Stel je vraag') {
+				$(this).val('');
+			};
+			$(this).removeClass('searchfocusout');
+			return false;
+		});
+		$('#search1').focusout(function() {
+			if($(this).val() == "") {
+				$(this).val('Stel je vraag');
+			}
+			$(this).addClass('searchfocusout');
+			return false;
+		});
+	});
 	function checkgsaform(){
 		if($('#search').val() == ""){
 			$("#search").focus();
@@ -212,7 +228,7 @@
 		<form onsubmit="return checkgsaform()" action="/Zoeken.htm" class="search-form">
 			<fieldset>
 				<div class="area">
-					<input type="text" id="search1" name="q" class="text" />
+					<input type="text" id="search1" value="Stel je vraag" name="q" class="text searchfocusout"" />
 				</div>
 			</fieldset>
 		</form>
@@ -327,6 +343,22 @@
 			<li><a href="/Home.htm" title="Home">Home</a></li><li><a href="/Overig.htm" title="Overig">Overig</a></li><li><a href="/Overig/Privacy.htm" title="Privacy">Privacy</a></li>
 		</ul>
 		<script type="text/javascript">
+	$(document).ready(function() {
+		$('#search2').focusin(function() {
+			if($(this).val() == 'Stel je vraag') {
+				$(this).val('');
+			};
+			$(this).removeClass('searchfocusout');
+			return false;
+		});
+		$('#search2').focusout(function() {
+			if($(this).val() == "") {
+				$(this).val('Stel je vraag');
+			}
+			$(this).addClass('searchfocusout');
+			return false;
+		});
+	});
 	function checkgsaform(){
 		if($('#search').val() == ""){
 			$("#search").focus();
@@ -337,7 +369,7 @@
 		<form onsubmit="return checkgsaform()" action="/Zoeken.htm" class="search-form">
 			<fieldset>
 				<div class="area">
-					<input type="text" id="search2" name="q" class="text" />
+					<input type="text" id="search2" value="Stel je vraag" name="q" class="text searchfocusout"" />
 				</div>
 			</fieldset>
 		</form>
@@ -350,6 +382,11 @@
 					<li><a href="/Shop.htm" title="Shop">Shop</a></li>
 					<li><a href="https://www.hi.nl/Mijn-Hi/Mijn-Profiel.htm" title="Mijn Profiel">Mijn Hi</a></li>
 					<li><a href="/Service-en-Contact.htm" title="Service en Contact">Service en Contact</a></li>
+			</ul>
+			<ul class="social">
+				<li><a class="facebook" href="http://www.facebook.com/sharer.php?u=http://www.hi.nl/Overig/Privacy.htm" target="_blank" title="Deel dit op Facebook">facebook</a></li>
+				<li><a class="twitter" href="http://twitter.com/share" url="http://www.hi.nl/Overig/Privacy.htm" target="_blank" title="Tweet dit">twitter</a></li>
+				<li><a class="hyves" href="http://www.hyves.nl/profilemanage/add/tips/?name=home&text=http://www.hi.nl/Overig/Privacy.htm" target="_blank" title="Deel dit op Hyves">hyves</a></li>
 			</ul>
 	</div>
 </div>
