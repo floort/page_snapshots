@@ -1,26 +1,33 @@
 
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"
+    class="
+    
+    "
+
+>
 <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=9" >
     <script type="text/javascript">window.ST=new Date().getTime();</script>
     <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
-    <meta http-equiv="X-UA-Compatible" content="IE=7" />
     <meta name="description" content="Dropbox is a free service that lets you bring your photos, docs, and videos anywhere and share them easily. Never email yourself a file again!"/>
     <meta name="keywords" content="online storage, free storage, file sharing, share files, awesome, cloud storage, online backup, cross platform, sync, sharing, mac, windows, os x, linux, backup, collaboration, file versioning, file revisions, remote access, undelete"/>
     <meta name="google-site-verification" content="TnuSyOnBMNmtugbpL1ZvW2PbSF9LKvoTzrvOGS9h-b0" />
     <meta name="google-site-verification" content="EZKIczQcM1-DVUMz8heu1dIhNtxNbLqbaA9-HbOnCQ4" />
     <meta name="norton-safeweb-site-verification" content="tz8iotmk-pkhui406y41y5bfmfxdwmaa4a-yc0hm6r0fga7s6j0j27qmgqkmc7oovihzghbzhbdjk-uiyrz438nxsjdbj3fggwgl8oq2nf4ko8gi7j4z7t78kegbidl4" />
-    <title>Dropbox
-                - Terms
+    <title>
+              Dropbox
+        - Terms
         - Simplify your life
     </title>
 
-    <link rel="shortcut icon" href="/static/21651/images/favicon.ico"/>
+    <link rel="shortcut icon" href="/static/25701/images/favicon.ico"/>
 
-    <link href="/static/21651/css/main.css" rel="stylesheet" type="text/css"/>
+    <link href="/static/25701/css/main.css" rel="stylesheet" type="text/css"/>
 
-    <link rel="apple-touch-icon" href="/static/21651/images/dropbox_webclip.png"/>
+    <link rel="apple-touch-icon" href="/static/25701/images/dropbox_webclip.png"/>
     <link rel="P3Pv1" href="/w3c/p3p.xml"/>
 
 
@@ -30,22 +37,31 @@ var Constants = {
   BLOCK_CLUSTER: 'dl\x2dweb\x2edropbox\x2ecom',
   PUBSERVER: 'dl\x2edropbox\x2ecom',
   WEBSERVER: 'www\x2edropbox\x2ecom',
+  LIVE_TRANSCODE_SERVER: 'showbox\x2dtr\x2edropbox\x2ecom',
+  DISABLE_VIDEO_ICONS: false,
+  DISABLE_VIDEOS_IN_LIGHTBOX: false,
   block: 'dl\x2dweb\x2edropbox\x2ecom',
   protocol: 'https',
   uid: '',
-  root_ns: '',
-  SVN_REV: '21651',
+  email: '',
+  sess_id: '153048020278955975393043716427629894119',
+  root_ns: 0,
+  SVN_REV: '25701',
   TOKEN: '',
   IS_PROD: 1,
   WIT_ENABLED: 0,
   upload_debug: false,
   tcn: 'touch',
   date_format: 'M\x2fd\x2fyyyy',
+  time_format: 'h\x3amm\x20a',
+  datetime_format: 'M\x2fd\x2fyyyy\x20h\x3amm\x20a',
+  ADMIN: 0,
   referrer: '', 
   TWO_ITEM_LIST: '\x25\x28x\x29s\x20and\x20\x25\x28y\x29s',
   THREE_ITEM_LIST: '\x25\x28x\x29s\x2c\x20\x25\x28y\x29s\x2c\x20and\x20\x25\x28z\x29s',
   LOCALES: [["en", "English"], ["es", "Espa\u00f1ol"], ["fr", "Fran\u00e7ais"], ["de", "Deutsch"], ["ja", "\u65e5\u672c\u8a9e"]],
-  USER_LOCALE: 'en'
+  USER_LOCALE: 'en',
+  EMAIL_VERIFIED: 0
 };
 </script>
     <script type="text/javascript">
@@ -60,7 +76,7 @@ var Constants = {
                         stack_str = stack.join("\n");
                     }
                 } catch (e) { }
-                var dbr = new Ajax.Request("/jse", {parameters: {'e': e, 'f': f || window.location.href, 'l': l, 'loc': window.location.href, 'ref': Constants.referrer, 'tb': tb || stack_str }});
+                var dbr = new Ajax.Request("/jse", {parameters: {'e': e, 'f': f || window.location.href, 'l': l, 'loc': window.location.href, 'ref': Constants.referrer, 'tb': tb || stack_str, 'trace': Trace && Trace.get() }});
                 window.reported_exception = true;
            }
         }
@@ -70,19 +86,34 @@ var Constants = {
             global_report_exception(e, f, l);
         };
     </script>
-<script type="text/javascript" src="/static/21651/javascript/dropbox-mini.js"></script>
+<script type="text/javascript" src="/static/25701/javascript/dropbox-mini.js"></script>
 
-     <script type="text/javascript">
-       if (self != top) {
-           top.location.replace(self.location.href);
-           setTimeout(function() {document.body.innerHTML = "<img src='https://www.dropbox.com/static/images/logo.png' onClick='top.location.href=window.location.href'>";},1);
-       }
-     </script>
-
+    <script type="text/javascript">
+      if (self != top) {
+          top.location.replace(self.location.href);
+          setTimeout(function() {document.body.innerHTML = "<img src='https://www.dropbox.com/static/images/logo.png' onClick='top.location.href=window.location.href'>";},1);
+      }
+    </script>
 
     <style type="text/css">
-      .hny-agkxhx { display: none; }
+      .hny-ayep { display: none; }
     </style>
+    <!--[if lte IE 8]> 
+    <style>
+    .sick-input input[type=password] {
+      padding-top: 7px !important;
+      padding-bottom: 3px !important;
+    }
+    .sick-input.small input {
+      padding-top: 4px !important;
+      padding-bottom: 2px !important;
+    }
+    .sick-input.small input[type=password] {
+      padding-top: 6px !important;
+      padding-bottom: 0px !important;
+    }
+    </style>
+    <![endif]-->
     <style type="text/css">
     .graybox { background: #f6f6f6; border: 1px solid #ccc; padding: 20px; }
     ul#subtabs a {
@@ -100,13 +131,13 @@ var Constants = {
 
 <body class="en " >
 
-
+    
 
     <div id="modal-behind" style="display: none;"></div>
 
     <div id="modal" style="display: none;">
         <div id="modal-box">
-            <a onclick="javascript: Modal.hide(); Event.stop(event); return false;" href="#" style="float: right;"><img src="&#47;static&#47;images&#47;icons&#47;icon_spacer.gif" alt="" border="0" class="sprite s_x " /></a>
+            <a id="modal-x" onclick="javascript: Modal.hide(); Event.stop(event); return false;" href="#"></a>
             <h2 id="modal-title"></h2>
             <div id="modal-content">
             </div>
@@ -117,34 +148,18 @@ var Constants = {
     <div id="floaters"></div><div id="trash-can" style="display:none"></div><div id="grave-yard" style="display:none"></div>
 
 
-    <div id="feedback-div" style="display: none">
-        <div id="feedback">
-            <form method="post" action="/feedback">
-                Suggestions, ideas, bug reports, and comments are always welcome. If you'd like to interact with other Dropbox users, check out our <a id="forums_link">forums</a>.
-                <br/><br/>
-                <strong>This feedback is used to improve our product, and you may not receive a response.  If you'd like support, <a href="/ticket#step:2">submit a help request</a>.</strong>
-                <script type="text/javascript">
-                   Util.jag('forums_link', 'href', 'http://forums.dropbox.com');
-                </script>
-                <br/><br/>
+    <div class="external-drop-indicator top" style="display: none;"></div>
+    <div class="external-drop-indicator right" style="display: none;"></div>
+    <div class="external-drop-indicator bottom" style="display: none;"></div>
+    <div class="external-drop-indicator left" style="display: none;"></div>
 
-                Email Address (optional)<br />
-                <input type="text" name="feedback_email" value="" class="textinput act_as_block" id="feedback_email" /><br /><br />
-                <textarea class="textinput act_as_block" name="content" id="feedback_textarea" rows="1" cols="1"></textarea>
 
-                <div align="right">
-                    <input type="text" name="email" class="hny-agkxhx"/> 
-                    <input type="submit" value="Send feedback" class="button" />
-                </div>
-            </form>
-        </div>
-    </div>
     <div id="translate-div" style="display:none; margin-bottom: -10px">
         <form id="translation-suggest-form" onsubmit="TranslationSuggest.submit_suggest(event); return false;" action='/translation_suggest' method="POST">
             <input type="hidden" name="locale" value="en" />
             <input type="hidden" name="locale_url" value="https://www.dropbox.com/terms" />
             <input type="hidden" id="translation-msg-id" name="msg_id" value="" />
-            <p class="clean">Please paste or type the improper translation</p>
+            <p class="clean"><label for="bad_text">Please paste or type the improper translation</label></p>
             <div id="part-one">
                 <p>
                     <span class="error-message" id="bad-i18n-text-error" style="display: none">We couldn't find that string on this page.</span>
@@ -156,93 +171,90 @@ var Constants = {
                                     <div class="emo hotbox" id="translation-msg-display" style="margin-bottom: 10px"></div>
                   <p class="clean">Original English text</p>
                   <div class="green-hotbox" id="translation-orig-msg-display" style="margin-bottom: 10px"></div>
-                  <p class="clean">Suggested translation</p>
+                  <p class="clean"><label for="suggested_text">Suggested translation</label></p>
                   <p><textarea name="suggested_text" class="textinput act_as_block" rows='3' cols='40'></textarea></p>
-                  <p class="clean">Explanation of the problem</p>
+                  <p class="clean"><label for="explanation">Explanation of the problem</label></p>
                   <p><textarea name="explanation" class="textinput act_as_block" rows='3' cols='40'></textarea></p>
-                  <p style="text-align: right; margin-bottom:0;">
-                      <input type="button" class="button grayed" onclick="TranslationSuggest.start_wizard(event);return false;" value="Back" id="translation-back-button"/>
-                      <input type="submit" class="button" onclick="TranslationSuggest.submit_suggest(event); return false;" value="Suggest Translation" />
-                  </p>
+                  <div class="modal-buttons">
+                      <input type="button" class="freshbutton" onclick="TranslationSuggest.start_wizard(event);return false;" value="Back" id="translation-back-button"/>
+                      <input type="submit" class="freshbutton-blue" onclick="TranslationSuggest.submit_suggest(event); return false;" value="Suggest translation" />
+                  </div>
             </div>
         </form>
     </div>
 
-    <div id="server-error" class="notify server-er" style="display: none;">
-        <table cellpadding="0" cellspacing="0">
-            <tr>
-                <td class="msg-td">
-                    <span class="msg-span">There was a problem completing this request.</span>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <b class="rbottom"><b class="r0"></b><b class="r1"></b></b>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div id="server-success" class="notify server-ok" style="display: none;">
-        <table cellpadding="0" cellspacing="0">
-            <tr>
-                <td class="msg-td">
-                    <span>Request completed successfully.</span>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <b class="rbottom"><b class="r0"></b><b class="r1"></b></b>
-                </td>
-            </tr>
-        </table>
-    </div>
-<div id="main-container">
-
-        <div id="header" class="clearfix">
-
-        <ul id="topnav">
-            <li id="top-login-wrapper">
-
-<a id="login-hover-link" href="/login"><img src="&#47;static&#47;images&#47;icons&#47;icon_spacer.gif" alt="" class="sprite s_door_in link-img" />Log in<img src="&#47;static&#47;images&#47;icons&#47;icon_spacer.gif" style="padding&#58; 0&#59; margin-left&#58; 2px&#59; margin-top&#58; -1px&#59;" id="login-hover-dropdown-icon" alt="" class="sprite s_login_arrow link-img" /></a>
-<div id="login-hover-cover"></div>
-<div id="login-hover-cont" class="offscreen">
-    <form action="https://www.dropbox.com/login" method="post">
-<input type="hidden" name="t" value="7eec60c91c" />
-        <p>
-            Email<br/>
-            <input id="login_email_elm" type="text" name="login_email" class="textinput" tabindex="1" />
-        </p>
-        <p style="margin-bottom: 0.25em;">
-            Password<br/>
-            <input type="password" name="login_password" class="textinput" tabindex="2" />
-        </p>
-        <p style="margin-bottom: 0.5em;">
-            <input type="checkbox" class="no-border" name="remember_me" id="remember_me" style="vertical-align: middle; margin-left: 0;" tabindex="3">
-            <label for="remember_me" style="vertical-align: middle; cursor: pointer; ">Remember me</label>
-        </p>
-        <p style="margin-bottom: 0;">
-            <input type="submit" value="Log in" class="welcome-submit button" style="float:right;" tabindex="4">
-            <a id="login-create-an-account" href="/register">Create an account</a>
-        </p>
-
-    </form>
+<div id="notify-wrapper">
+  <span id="notify" style="display: none;">
+    <span id="notify-msg">Sorry, there was a problem loading this page.</span>
+  </span>
 </div>
-            </li>
-        </ul>
-            <a href="/" id="logo"><img border="0" id="logo_img" alt="Dropbox - Secure backup, sync and sharing made easy." src="/static/21651/images/logo.png"/>
-	
-        </a>
+
+
+<div id="outer-frame">
+    <div id="page-header">
+
+
+<div id='account-header'>
+  <ul class="nav">
+                <li>
+
+
+<div id="top-login-wrapper">
+    <a id="login-hover-link" href="/login"><img src="&#47;static&#47;images&#47;icons&#47;icon_spacer.gif" alt="" class="sprite s_door_in link-img" />Sign in<img src="&#47;static&#47;images&#47;icons&#47;icon_spacer.gif" style="padding&#58; 0&#59; margin-left&#58; 2px&#59; margin-top&#58; -1px&#59;" id="login-hover-dropdown-icon" alt="" class="sprite s_login_arrow link-img" /></a>
+    <div id="login-hover-cont" class="offscreen chat-bubble">
+        <form action="https://www.dropbox.com/login" method="post">
+
+            <div class="sick-input small">
+              <label for="login_email_elm">Email</label>
+              <input id="login_email_elm" type="text" name="login_email" tabindex="1" />
+            </div>
+
+            <div class="sick-input small">
+              <label for="login_password_elm">Password</label>
+              <input type="password" id="login_password_elm" name="login_password" tabindex="2" />
+            </div>
+
+            <p style="margin-bottom: 0.5em; line-height: 28px;">
+                <input type="checkbox" class="no-border" name="remember_me" id="remember_me" style="vertical-align: middle; margin-left: 0;" tabindex="3" />
+                <label for="remember_me" style="vertical-align: middle; cursor: pointer; ">Remember me</label>
+
+                <input type="submit" value="Sign in" class="freshbutton-blue" tabindex="4" id="toplogin-submit" />
+                <input type="hidden" name="cont" value="/home">
+            </p>
+            <p class="create-account">
+                <a id="login-create-an-account" href="/register">Create an account</a>
+            </p>
+        </form>
+
+        <div class="chat-bubble-arrow-border"></div>
+        <div class="chat-bubble-arrow"></div>
+    </div>
+</div>
+                </li>
+            </ul>
+        </div>
     </div>
 
 
-        <div name="main tabs" id="tabs-container" class="wit_group clearfix">
-            <a class='no-tab-link' href="/"><img src="&#47;static&#47;images&#47;icons&#47;icon_spacer.gif" alt="" class="sprite s_arrow_turn_left link-img" />Back to home</a>
-        </div>
+    <div id="page-logo-header" class="noborder">
+        <a href="/"><img src="/static/images/logo210.png" alt="Dropbox home" id="db-logo"/></a>
 
-    <div id="content" style='background:#fff;'  class="clearfix">
-        
-        <div id="full-content">
-                <div id="subtabs-container" class="clearfix">
+
+    </div>
+
+
+    <div id="modal-locale-selector" style="display:none;">
+      <ul>
+        <li><a class="locale-option" data-locale="en">English</a></li>
+        <li><a class="locale-option" data-locale="es">Español</a></li>
+        <li><a class="locale-option" data-locale="fr">Français</a></li>
+        <li><a class="locale-option" data-locale="de">Deutsch</a></li>
+        <li><a class="locale-option" data-locale="ja">日本語</a></li>
+      </ul>
+    </div>
+    <noscript><p class="center">The Dropbox website requires JavaScript.</p></noscript>
+    <div id="page-content">
+            <div id="subtabs-container" class="clearfix">
         <ul id="subtabs">
             <li id="terms-tab" class="subtab selected "><a href="terms" onclick="Tabs.showTab(this,'terms');"><img src="&#47;static&#47;images&#47;icons&#47;icon_spacer.gif" alt="" class="sprite s_page_white_magnify " /> Terms of Service</a></li>
             <li id="privacy-tab" class="subtab  "><a href="privacy" onclick="Tabs.showTab(this, 'privacy');"><img src="&#47;static&#47;images&#47;icons&#47;icon_spacer.gif" alt="" class="sprite s_key " /> Privacy Policy</a></li>
@@ -257,14 +269,14 @@ var Constants = {
 <div id="terms-of-service">
     <h2>Dropbox Terms of Service</h2>
 
-    <p>Last Modified: July 6, 2011</p>
+    <p>Last Modified: March 26, 2012</p>
 
     <p>Thank you for using Dropbox! These terms of service (the &#147;<b>Terms</b>&#148;) govern your access to and use of Dropbox (&#147;<b>we</b>&#148; or &#147;<b>our</b>&#148;) websites and services (the &#147;<b>Services</b>&#148;), so please carefully read them before using the Services.</p>
 
     <p><b>By using the Services you agree to be bound by these Terms</b>. If you are using the Services on behalf of an organization, you are agreeing to these Terms for that organization and promising that you have the authority to bind that organization to these terms. In that case, &#147;you&#148; and &#147;your&#148; will refer to that organization.<p>
 
     <p>You may use the Services only in compliance with these Terms. You may use the Services only if you have the power to form a contract with Dropbox and are not barred under any applicable laws from doing so. The Services may continue to change over time as we refine and add more features. We may stop, suspend, or modify the Services at any time without prior notice to you. We may also remove any content from our Services at our discretion.</p>
-    
+
     <h2>Your Stuff & Your Privacy</h2>
 
     <p>By using our Services you provide us with information, files, and folders that you submit to Dropbox (together, “your stuff”).  You retain full ownership to your stuff.  We don’t claim any ownership to any of it.  These Terms do not grant us any rights to your stuff or intellectual property except for the limited rights that are needed to run the Services, as explained below.</p>
@@ -272,7 +284,7 @@ var Constants = {
     <p>We may need your permission to do things you ask us to do with your stuff, for example, hosting your files, or sharing them at your direction.  This includes product features visible to you, for example, image thumbnails or document previews.  It also includes design choices we make to technically administer our Services, for example, how we redundantly backup data to keep it safe.  You give us the permissions we need to do those things solely to provide the Services.   This permission also extends to trusted third parties we work with to provide the Services, for example Amazon, which provides our storage space (again, only to provide the Services).</p>
 
     <p>To be clear, aside from the rare exceptions we identify in our <a href='/privacy'>Privacy Policy</a>, no matter how the Services change, we won’t share your content with others, including law enforcement, for any purpose unless you direct us to.  How we collect and use your information generally is also explained in our <a href='/privacy'>Privacy Policy</a>.</p>
-    
+
     <p>You are solely responsible for your conduct, the content of your files and folders, and your communications with others while using the Services.  For example, it’s your responsibility to ensure that you have the rights or permission needed to comply with these Terms.</p>
 
     <p>We may choose to review public content for compliance with our community guidelines, but you acknowledge that Dropbox has no obligation to monitor any information on the Services.  We are not responsible for the accuracy, completeness, appropriateness, or legality of files, user posts, or any other information you may be able to access using the Services.</p>
@@ -292,10 +304,10 @@ var Constants = {
     <h2>Account Security</h2>
 
     <p>You are responsible for safeguarding the password that you use to access the Services and you agree not to disclose your password to any third party. You are responsible for any activity using your account, whether or not you authorized that activity. You should immediately notify Dropbox of any unauthorized use of your account. You acknowledge that if you wish to protect your transmission of data or files to Dropbox, it is your responsibility to use a secure encrypted connection to communicate with the Services.</p>
-    
+
     <h2>Software and Updates</h2>
-    
-    <p>Some use of our Service requires you to download a client software package (&#147;Software&#148;). Dropbox hereby grants you a limited, nonexclusive, nontransferable, revocable license to use the Software, solely to access 
+
+    <p>Some use of our Service requires you to download a client software package (&#147;Software&#148;). Dropbox hereby grants you a limited, nonexclusive, nontransferable, revocable license to use the Software, solely to access
 the Services. Your license to use the Software is automatically revoked if you violate these Terms in a manner that implicates our intellectual property rights. We hereby reserve all rights not expressly granted in these Terms. You must not reverse engineer or decompile the Software, nor attempt to do so, nor assist anyone else to do so. Our Services may update the Software on your device automatically when a new version is available. Our pause syncing feature pauses syncing of your files, but may not cease all data transfer, so you should exit the desktop client if you’d like to stop data transfer.</p>
 
     <h2>Dropbox Property and Feedback</h2>
@@ -312,31 +324,27 @@ the Services. Your license to use the Software is automatically revoked if you v
 
     <p>
        Copyright Agent<br>
-       Dropbox Inc.<br>
-       760 Market Street #1150<br>
-       San Francisco, CA 94102<br>
+       Dropbox, Inc.<br>
+       185 Berry St. Ste. 400<br>
+       San Francisco, CA 94107<br>
        copyright@dropbox.com<br>
     </p>
 
     <h2>Other Content</h2>
-    
+
     <p>The Services may contain links to third-party websites or resources. Dropbox does not endorse and is not responsible or liable for their availability, accuracy, the related content, products, or services. You are solely responsible for your use of any such websites or resources. Also, if we provide you with any software under an open source license, there may be provisions in those licenses that expressly conflict with these Terms, in which case the open source provisions will apply.</p>
 
     <h2>Termination</h2>
 
     <p>Though we’d much rather you stay, you can stop using our Services any time. We reserve the right to suspend or end the Services at any time, with or without cause, and with or without notice. For example, we may suspend or terminate your use if you are not complying with these Terms, or use the Services in any way that would cause us legal liability or disrupt others’ use of the Services. If we suspend or terminate your use, we will try to let you know in advance and help you retrieve data, though there may be some cases (for example, repeatedly or flagrantly violating these Terms, a court order, or danger to other users) where we may suspend immediately.</p>
-    
+
     <h2>Dropbox is Available &#147;AS-IS&#148;</h2>
 
     <p>Though we want to provide a great service, there are certain things about the service we can’t promise. For example, THE SERVICES AND SOFTWARE ARE PROVIDED &#147;AS IS&#148;, AT YOUR OWN RISK, WITHOUT EXPRESS OR IMPLIED WARRANTY OR CONDITION OF ANY KIND. WE ALSO DISCLAIM ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT. (We are not shouting- it’s just that these disclaimers are really important, so we want to highlight them). Dropbox will have no responsibility for any harm to your computer system, loss or corruption of data, or other harm that results from your access to or use of the Services or Software. Some states do not allow the types of disclaimers in this paragraph, so they may not apply to you. </p>
 
     <h2>Limitation of Liability</h2>
-    
-    <p>TO THE FULLEST EXTENT PERMITTED BY LAW, IN NO EVENT WILL DROPBOX, ITS AFFILIATES, OFFICERS, EMPLOYEES, AGENTS, SUPPLIERS OR LICENSORS BE LIABLE FOR (A) ANY INDIRECT, SPECIAL, INCIDENTAL, PUNITIVE, EXEMPLARY OR CONSEQUENTIAL (INCLUDING LOSS OF USE, DATA, BUSINESS, OR PROFITS) DAMAGES, REGARDLESS OF LEGAL THEORY, WHETHER OR NOT DROPBOX HAS BEEN WARNED OF THE POSSIBILITY OF SUCH DAMAGES, AND EVEN IF A REMEDY FAILS OF ITS ESSENTIAL PURPOSE; (B) AGGREGATE LIABILITY FOR ALL CLAIMS RELATING TO THE SERVICES MORE THAN THE GREATER OF $20 OR THE AMOUNTS PAID BY YOU TO DROPBOX FOR THE PAST THREE MONTHS OF THE SERVICES IN QUESTION. Some states do not allow the types of limitations in this paragraph, so they may not apply to you.</p>
-    
-    <h2>Export Restrictions</h2>
 
-    <p>The export and re-export of the Software may be controlled by the United States Export Administration Regulations. The Software may not be used in Cuba; Iran; North Korea; Sudan; or Syria or any country that is subject to an embargo by the United States. If you are a resident or national of, or a business located in, any of those countries, you may not download or use the Software. In addition, the Software may not be distributed to persons on the Table of Denial Orders; the Entity List; or the List of Specially Designated Nationals.</p>
+    <p>TO THE FULLEST EXTENT PERMITTED BY LAW, IN NO EVENT WILL DROPBOX, ITS AFFILIATES, OFFICERS, EMPLOYEES, AGENTS, SUPPLIERS OR LICENSORS BE LIABLE FOR (A) ANY INDIRECT, SPECIAL, INCIDENTAL, PUNITIVE, EXEMPLARY OR CONSEQUENTIAL (INCLUDING LOSS OF USE, DATA, BUSINESS, OR PROFITS) DAMAGES, REGARDLESS OF LEGAL THEORY, WHETHER OR NOT DROPBOX HAS BEEN WARNED OF THE POSSIBILITY OF SUCH DAMAGES, AND EVEN IF A REMEDY FAILS OF ITS ESSENTIAL PURPOSE; (B) AGGREGATE LIABILITY FOR ALL CLAIMS RELATING TO THE SERVICES MORE THAN THE GREATER OF $20 OR THE AMOUNTS PAID BY YOU TO DROPBOX FOR THE PAST THREE MONTHS OF THE SERVICES IN QUESTION. Some states do not allow the types of limitations in this paragraph, so they may not apply to you.</p>
 
     <h2>Modifications</h2>
 
@@ -352,33 +360,33 @@ the Services. Your license to use the Software is automatically revoked if you v
 <div id="privacy-policy">
 
      <style type='text/css'> .slugline { font-weight: bold; text-decoration: underline; font-style: italic;} </style>
-     
-     <h2>Dropbox Privacy Policy</h2>
-     
-     <p>Last Modified: July 2, 2011</p>
 
-     <p>This Privacy Policy provides our policies and procedures for collecting, using, and disclosing your information. Users can access the Dropbox service (the “<b>Service</b>”) through our website www.dropbox.com, applications on Devices, through APIs, and through third-parties.  A “<b>Device</b>” is any computer used to access the Dropbox Service, including without limitation a desktop, laptop, mobile phone, tablet, or other consumer electronic device.  This Privacy Policy governs your access of the Dropbox Service, regardless of how you access it, and by using our Services you consent to the collection, transfer, processing, storage, disclosure and other uses described in this Privacy Policy.  All of the different forms of data, content, and information described below are collectively referred to as “information.”</p> 
+     <h2>Dropbox Privacy Policy</h2>
+
+     <p>Last Modified: February 14, 2012</p>
+
+     <p>This Privacy Policy provides our policies and procedures for collecting, using, and disclosing your information. Users can access the Dropbox service (the “<b>Service</b>”) through our website www.dropbox.com, applications on Devices, through APIs, and through third-parties.  A “<b>Device</b>” is any computer used to access the Dropbox Service, including without limitation a desktop, laptop, mobile phone, tablet, or other consumer electronic device.  This Privacy Policy governs your access of the Dropbox Service, regardless of how you access it, and by using our Services you consent to the collection, transfer, processing, storage, disclosure and other uses described in this Privacy Policy.  All of the different forms of data, content, and information described below are collectively referred to as “information.”</p>
 
      <h2>1. The Information We Collect And Store</h2>
      <p>We may collect and store the following information when running the Dropbox Service:</p>
 
-     <p><span class='slugline'>Information You Provide.</span> &nbsp; When you register an account, we collect some personal information, such as your name, phone number, credit card or other billing information, email address and home and business postal addresses. You may also ask us to import your contacts by giving us access to your third party services (for example, your email account) or to use your social networking information if you give us access to your account on social network connection services.  You may also provide us with your contacts’ email addresses when sharing folders or files with them.</p>
+     <p><span class='slugline'>Information You Provide.</span> &nbsp; When you register an account, we collect some personal information, such as your name, phone number, credit card or other billing information, email address and home and business postal addresses. You may also ask us to import your contacts by giving us access to your third party services (for example, your email account) or to use your social networking information if you give us access to your account on social network connection services.  When you invite others to join Dropbox by using our referral page, we send them a one-time email for that referral.  You may also provide us with your contacts’ email addresses when sharing folders or files with them.  We may also receive Personal Information (for example, your email address) through other users, for example if they have tried to share something with you or tried to refer Dropbox to you.</p>
 
      <p><span class='slugline'>Files.</span> &nbsp; We collect and store the files you upload, download, or access with the Dropbox Service (“<b>Files</b>”).  If you add a file to your Dropbox that has been previously uploaded by you or another user, we may associate all or a portion of the previous file with your account rather than storing a duplicate.</p>
-     
+
      <p><span class='slugline'>Log Data.</span> &nbsp;  When you use the Service, we automatically record information from your Device, its software, and your activity using the Services. This may include the Device’s Internet Protocol (“IP”) address, browser type, the web page visited before you came to our website, information you search for on our website, locale preferences, identification numbers associated with your Devices, your mobile carrier, date and time stamps associated with transactions, system configuration information, metadata concerning your Files, and other interactions with the Service.</p>
 
      <p><span class='slugline'>Cookies.</span> &nbsp; We also use “cookies” to collect information and improve our Services. A cookie is a small data file that we transfer to your Device. We may use “persistent cookies” to save your registration ID and login password for future logins to the Service. We may use “session ID cookies” to enable certain features of the Service, to better understand how you interact with the Service and to monitor aggregate usage and web traffic routing on the Service. You can instruct your browser, by changing its options, to stop accepting cookies or to prompt you before accepting a cookie from the websites you visit. If you do not accept cookies, however, you may not be able to use all aspects of the Service. </p>
 
      <h2>2. How We Use Personal Information</h2>
-     <p><span class='slugline'>Personal Information:</span> &nbsp; In the course of using the Service, we may collect personal information that can be used to contact or identify you (“<b>Personal Information</b>”). Personal Information is or may be used: (i) to provide and improve our Service, (ii) to administer your use of the Service, (iii) to better understand your needs and interests, (iv) to personalize and improve your experience, and (v) to provide or offer software updates and product announcements. If you no longer wish to receive communications from us, please follow the “unsubscribe” instructions provided in any of those communications, or update your <a href='https://www.dropbox.com/account#settings'>account settings</a> information.</p>
+     <p><span class='slugline'>Personal Information.</span> &nbsp; In the course of using the Service, we may collect personal information that can be used to contact or identify you (“<b>Personal Information</b>”). Personal Information is or may be used: (i) to provide and improve our Service, (ii) to administer your use of the Service, (iii) to better understand your needs and interests, (iv) to personalize and improve your experience, and (v) to provide or offer software updates and product announcements. If you no longer wish to receive communications from us, please follow the “unsubscribe” instructions provided in any of those communications, or update your <a href='https://www.dropbox.com/account#settings'>account settings</a> information.</p>
 
-     <p><span class='slugline'>Geo-Location Information:</span> &nbsp; Some Devices allow applications to access real-time location-based information (for example, GPS).  Our mobile apps do not collect such information as of the date this policy went into effect, but may do so in the future with your consent to improve our Services.  Some photos you place in Dropbox may contain recorded location information.  We may use this information to optimize your experience.  Also, some of the information we collect from a Device, for example IP address, can sometimes be used to approximate a Device’s location.</p>
+     <p><span class='slugline'>Geo-Location Information.</span> &nbsp; Some Devices allow applications to access real-time location-based information (for example, GPS).  Our mobile apps do not collect such information from your mobile device at any time while you download or use our mobile apps as of the date this policy went into effect, but may do so in the future with your consent to improve our Services.  Some photos and videos you place in Dropbox may contain recorded location information.  We may use this information to optimize your experience.  If you do not wish to share files embedded with your geo-location information with us, please do not upload them.  If you don’t want to store location data in your photos or videos, please consult the documentation for your camera to turn off that feature.  Also, some of the information we collect from a Device, for example IP address, can sometimes be used to approximate a Device’s location.</p>
 
-     <p><span class='slugline'>Analytics:</span> &nbsp; We also collect some information (ourselves or using third party services) using logging and cookies, which can sometimes be correlated with Personal Information.  We use this information for the above purposes and to monitor and analyze use of the Service, for the Service’s technical administration, to increase our Service’s functionality and user-friendliness, and to verify users have the authorization needed for the Service to process their requests.  As of the date this policy went into effect, we use Google Analytics.   To learn more about the privacy policy of Google Analytics, click <a href='http://www.google.com/intl/en/analytics/privacyoverview.html'>here</a>, and to learn how to opt out of that service click <a href='http://tools.google.com/dlpage/gaoptout?hl=en'>here</a>.</p>
-     
+     <p><span class='slugline'>Analytics.</span> &nbsp; We also collect some information (ourselves or using third party services) using logging and cookies, such as IP address, which can sometimes be correlated with Personal Information.  We use this information for the above purposes and to monitor and analyze use of the Service, for the Service’s technical administration, to increase our Service’s functionality and user-friendliness, and to verify users have the authorization needed for the Service to process their requests.  As of the date this policy went into effect, we use Google Analytics.   To learn more about the privacy policy of Google Analytics, click <a href='http://www.google.com/intl/en/analytics/privacyoverview.html'>here</a>, and to learn how to opt out of that service click <a href='http://tools.google.com/dlpage/gaoptout?hl=en'>here</a>.</p>
+
      <h2>3. Information Sharing and Disclosure</h2>
-     <p><span class='slugline'>Your Use.</span> &nbsp; We will display your Personal Information in your profile page and elsewhere on the Service according to the preferences you set in your account. Any information you choose to provide should reflect how much you want others to know about you. Please consider carefully what information you disclose in your profile page and your desired level of anonymity. You can review and revise your profile information at any time. We may also share or disclose your information with your consent, for example if you use a third party application to access your account (see below). Through certain features of the Service, you may also have the ability to make some of your information public.  Public information may be broadly and quickly disseminated.</p>
+     <p><span class='slugline'>Your Use.</span> &nbsp; We will display your Personal Information in your profile page and elsewhere on the Service according to the preferences you set in your account. Any information you choose to provide should reflect how much you want others to know about you. Please consider carefully what information you disclose in your profile page and your desired level of anonymity. You can review and revise your profile information at any time.  We do not sell your personal information to third parties.  We may also share or disclose your information with your consent, for example if you use a third party application to access your account (see below).  Through certain features of the Service, you may also have the ability to make some of your information public.  Public information may be broadly and quickly disseminated.</p>
 
      <p><span class='slugline'>Service Providers, Business Partners and Others.</span> &nbsp; We may use certain trusted third party companies and individuals to help us provide, analyze, and improve the Service (including but not limited to data storage, maintenance services, database management, web analytics, payment processing, and improvement of the Service’s features). These third parties may have access to your information only for purposes of performing these tasks on our behalf and under obligations similar to those in this Privacy Policy.  As of the date this policy went into effect, we use Amazon’s S3 storage service to store some of your information (for example, your Files).  You can find more information on Amazon's data security from the <a href='http://aws.amazon.com/articles/1697'>S3 site</a> or, read more about <a href='https://www.dropbox.com/help/7'>how Dropbox and Amazon securely store data</a>.
 
@@ -391,13 +399,15 @@ the Services. Your license to use the Software is automatically revoked if you v
      <p><span class='slugline'>Non-private or Non-Personal Information.</span> &nbsp; We may disclose your non-private, aggregated, or otherwise non-personal information, such as usage statistics of our Service. </p>
 
      <h2>4. Changing or Deleting Your Information</h2>
-     <p>If you are a registered user, you may review, update, correct or delete the Personal Information provided in your registration or account profile by changing your “account settings.” If your personally identifiable information changes, or if you no longer desire our service, you may update or delete it by making the change on your <a href='https://www.dropbox.com/account#settings'>account settings</a>.  In some cases we may retain copies of your information if required by law.</p>
+     <p>If you are a registered user, you may review, update, correct or delete the Personal Information provided in your registration or account profile by changing your “account settings.” If your personally identifiable information changes, or if you no longer desire our service, you may update or delete it by making the change on your <a href='https://www.dropbox.com/account#settings'>account settings</a>.  In some cases we may retain copies of your information if required by law.  For questions about your Personal Information on our Service, please contact privacy@dropbox.com.  We will respond to your inquiry within 30 days.</p>
 
      <h2>5. Data Retention</h2>
      <p>We will retain your information for as long as your account is active or as needed to provide you services. If you wish to cancel your account or request that we no longer use your information to provide you services, you may delete your account <a href='https://www.dropbox.com/account/delete'>here</a>.  We may retain and use your information as necessary to comply with our legal obligations, resolve disputes, and enforce our agreements.  Consistent with these requirements, we will try to delete your information quickly upon request.  Please note, however, that there might be latency in deleting information from our servers and backed-up versions might exist after deletion.  In addition, we do not delete from our servers files that you have in common with other users.</p>
 
      <h2>6. Dropbox Community</h2>
-     <p>Our Service offers publicly accessible community services such as blogs, forums, and wikis. You should be aware that any information you provide in these areas may be read, collected, and used by others who access them.  Your posts may remain even after you cancel your account.</p>
+     <p>Our Service offers publicly accessible community services such as blogs, forums, and wikis. You should be aware that any information you provide in these areas may be read, collected, and used by others who access them.  Your posts may remain even after you cancel your account.  For questions about your Personal Information on our Service, please contact <a href='privacy@dropbox.com'>privacy@dropbox.com</a>.</p>
+
+     <p>Our Site includes links to other Web sites whose privacy practices may differ from those of Dropbox. If you submit personal information to any of those sites, your information is governed by their privacy statements.  We encourage you to carefully read the privacy statement of any Web site you visit.</p>
 
      <h2>7. Security</h2>
      <p>The security of your information is important to us.  When you enter sensitive information (such as a credit card number) on our order forms, we encrypt the transmission of that information using secure socket layer technology (SSL). </p>
@@ -407,10 +417,17 @@ the Services. Your license to use the Software is automatically revoked if you v
      <h2>8. Our Policy Toward Children</h2>
      <p>Our Services are not directed to persons under 13. We do not knowingly collect personally identifiable information from children under 13. If a parent or guardian becomes aware that his or her child has provided us with Personal Information without their consent, he or she should contact us at <a href='mailto:privacy@dropbox.com'>privacy@dropbox.com</a>. If we become aware that a child under 13 has provided us with Personal Information, we will take steps to delete such information from our files.</p>
 
-     <h2>9. Contacting Us</h2>
-     <p>If you have any questions about this Privacy Policy, please contact us at <a href='mailto:privacy@dropbox.com'>privacy@dropbox.com</a>.</p>
+     <h2>9. Safe Harbor</h2>
+     <p>Dropbox has received TRUSTe's Privacy Seal signifying that this privacy statement and our practices have been reviewed by TRUSTe for compliance with TRUSTe's program requirements including transparency, accountability and choice regarding the collection and use of your personal information. The TRUSTe program does not cover information that may be collected through downloadable software.</p>
 
-     <h2>10. Changes to our Privacy Policy</h2>
+     <p>Dropbox complies with the U.S. – E.U. Safe Harbor Framework and the U.S. – Swiss Safe Harbor framework as set forth by the U.S. Department of Commerce regarding the collection, use, and retention of personal data from European Union member countries and Switzerland. Dropbox has certified that it adheres to the Safe Harbor Privacy Principles of notice, choice, onward transfer, security, data integrity, access, and enforcement.  To learn more about the Safe Harbor program, and to view Dropbox’s certification, please visit <a href='http://export.gov/safeharbor'>http://export.gov/safeharbor</a>.</p>
+
+     <p>If you have questions regarding this statement, you should first contact us at <a href='mailto:privacy@dropbox.com'>privacy@dropbox.com</a>. If you do not receive acknowledgement of your inquiry or your inquiry has not been satisfactorily addressed, you should then contact TRUSTe at <a href='http://www.truste.org/consumers/watchdog_complaint.php'>http://www.truste.org/consumers/watchdog_complaint.php</a>, by fax at 415-520-3420, or by mail to TRUSTe Safe Harbor Compliance Dept., <a href='http://www.truste.com/about_TRUSTe/contact_us.html'>click for mailing address</a>.  The TRUSTe dispute resolution process is only available in English.</p>
+
+     <h2>10. Contacting Us</h2>
+     <p>If you have any questions about this Privacy Policy, please contact us at <a href='mailto:privacy@dropbox.com'>privacy@dropbox.com</a> or at 185 Berry Street, 4th floor, San Francisco, CA 94107.</p>
+
+     <h2>11. Changes to our Privacy Policy</h2>
      <p>This Privacy Policy may change from time to time.  If we make a change to this privacy policy that we believe materially reduces your rights, we will provide you with notice (for example, by email).  And we may provide notice of changes in other circumstances as well.  By continuing to use the Service after those changes become effective, you agree to be bound by the revised Privacy Policy.</p>
 
 </div>
@@ -424,42 +441,40 @@ the Services. Your license to use the Software is automatically revoked if you v
 
     </p>
     <p>
-    If you are a copyright owner, authorized to act on behalf of one, or authorized to act under any exclusive right under copyright, please report alleged copyright infringements taking place on or through the Site by completing the following DMCA Notice of Alleged Infringement and delivering it to Dropbox’s Designated Copyright Agent.  Upon receipt of Notice as described below, Dropbox will take whatever action, in its sole discretion, it deems appropriate, including removal of the challenged content from the Site. 
+    If you are a copyright owner, authorized to act on behalf of one, or authorized to act under any exclusive right under copyright, please report alleged copyright infringements taking place on or through the Site by completing the following DMCA Notice of Alleged Infringement and delivering it to Dropbox’s Designated Copyright Agent.  Upon receipt of Notice as described below, Dropbox will take whatever action, in its sole discretion, it deems appropriate, including removal of the challenged content from the Site.
     </p>
 
     <div class="graybox">
-     <center><p class="clean">DMCA Notice of Alleged Infringement (“<b>Notice</b>”)</p></center>
+        <center><p class="clean">DMCA Notice of Alleged Infringement (“<b>Notice</b>”)</p></center>
 
-     <ol>
-     <li><p>Identify the copyrighted work that you claim has been infringed, or - if multiple copyrighted works are covered by this Notice - you may provide a representative list of the copyrighted works that you claim have been infringed.</p></li>
+        <ol>
+            <li><p>Identify the copyrighted work that you claim has been infringed, or - if multiple copyrighted works are covered by this Notice - you may provide a representative list of the copyrighted works that you claim have been infringed.</p></li>
+            <li><p>Identify the material or link you claim is infringing (or the subject of infringing activity) and to which access is to be disabled, including at a minimum, if applicable, the URL of the link shown on the Site or the exact location where such material may be found.</p></li>
+            <li><p>Provide your company affiliation (if applicable), mailing address, telephone number, and, if available, email address.</p></li>
 
-     <li><p>Identify the material or link you claim is infringing (or the subject of infringing activity) and to which access is to be disabled, including at a minimum, if applicable, the URL of the link shown on the Site or the exact location where such material may be found.</p></li>
+            <li>Include both of the following statements in the body of the Notice:
+                <ul>
+                    <li><p>“I hereby state that I have a good faith belief that the disputed use of the copyrighted material is not authorized by the copyright owner, its agent, or the law (e.g., as a fair use).”</p></li>
+                    <li><p>“I hereby state that the information in this Notice is accurate and, under penalty of perjury, that I am the owner, or authorized to act on behalf of, the owner, of the copyright or of an exclusive right under the copyright that is allegedly infringed.”</p></li>
+                </ul>
+            </li>
+            <li><p>Provide your full legal name and your electronic or physical signature.</p></li>
+        </ol>
 
-     <li><p>Provide your company affiliation (if applicable), mailing address, telephone number, and, if available, email address.</p></li>
+        Deliver this Notice, with all items completed, to Dropbox’s Designated Copyright Agent:<br/><br/>
 
-     <li>Include both of the following statements in the body of the Notice:
-     <ul>
-     <li><p>“I hereby state that I have a good faith belief that the disputed use of the copyrighted material is not authorized by the copyright owner, its agent, or the law (e.g., as a fair use).”</p></li>
-     <li><p>“I hereby state that the information in this Notice is accurate and, under penalty of perjury, that I am the owner, or authorized to act on behalf of, the owner, of the copyright or of an exclusive right under the copyright that is allegedly infringed.”</p></li>
-     </ul>
-     </li>
-     <li><p>Provide your full legal name and your electronic or physical signature.</p></li>
-     </ol>
+        <div>
+            Copyright Agent<br/>
+            Dropbox Inc.<br/>
+            760 Market Street #1150<br/>
+            San Francisco, CA 94102<br/>
+            <a href="mailto:copyright@dropbox.com">copyright@dropbox.com</a>
+        </div>
+    </div>
+    <div style="text-align: center; padding-top: 40px;">
+        <a style="text-decoration: none;" class="freshbutton-blue" href="/copyright_complaint_form">Submit DMCA notice</a>
+    </div>
 
-     Deliver this Notice, with all items completed, to Dropbox’s Designated Copyright Agent:<br/><br/>
-
-     <div>
-      Copyright Agent<br/>
-      Dropbox Inc.<br/>
-      760 Market Street #1150<br/>
-      San Francisco, CA 94102<br/>
-      <a href="mailto:copyright@dropbox.com">copyright@dropbox.com</a>
-     </div>
-   </div>
-
-   <div style='text-align: center; padding-top: 40px;'>
-     To submit a DMCA notice use the form located <a href='/copyright_complaint_form' class='a'>here</a>
-   </div>
 </div>
 </div>
 
@@ -580,56 +595,17 @@ the Services. Your license to use the Software is automatically revoked if you v
 </div>
 </div>
 
-        </div>
-        <br class="clear"/>
     </div>
 
-
-    <div id="ghost-icons" style="cursor: move; height: 0; width:0;"></div>
-    <br class="clear"/>
-
-
-    <!-- Footer -->
-    <div name="footer" class="wit_group" id="footer">
-        <div style="margin: 0 auto">
-            <p id="copyright">
-                 <img src="&#47;static&#47;images&#47;icons&#47;icon_spacer.gif" alt="" class="sprite s_gray_logo text-img" />&copy; 2012 Dropbox<br/>
-            </p>
-            <div id="locale_selector_cont">
-                <div id="locale_selector"></div>
-            </div>
+    <div id="page-full-footer">
             <div class="footer-col">
                 <ul>
                     <li class="header">Dropbox</li>
-                    <li><a href="/">Home</a></li>
                     <li><a href="/install">Install</a></li>
                     <li><a href="/anywhere">Mobile</a></li>
                     <li><a href="/pricing">Pricing</a></li>
-                    <li><a href="/teams">For Business</a></li>
-                    <li><a href="/features">Features</a></li>
+                    <li><a href="/teams">Teams</a></li>
                     <li><a href="/tour">Tour</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <ul>
-                    <li class="header">About Us</li>
-                    <li><a href="http://blog.dropbox.com/">Dropbox Blog</a></li>
-                    <li><a href="/about">Our Team</a></li>
-                    <li><a href="/press">Press</a></li>
-                    <li><a href="/terms">Terms</a></li>
-                    <li><a href="/privacy">Privacy</a></li>
-                    <li><a href="http://www.dropbox.com/jobs">Jobs</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <ul>
-                    <li class="header">Support</li>
-                    <li><a href="/help">Help Center</a></li>
-                    <li><a href="http://forums.dropbox.com/">Forums</a></li>
-                    <li><a href="/votebox">Votebox</a></li>
-                    <li><a href="#" onclick="return Home.showFeedback();">Feedback</a></li>
-                    <li><a href="/contact">Contact Us</a></li>
-                    <li><a href="/dmca">Copyright</a></li>
                 </ul>
             </div>
             <div class="footer-col">
@@ -641,20 +617,47 @@ the Services. Your license to use the Software is automatically revoked if you v
                     <li><a href="/developers">Developers</a></li>
                 </ul>
             </div>
+            <div class="footer-col">
+                <ul>
+                    <li class="header">About us</li>
+                    <li><a href="http://blog.dropbox.com/">Dropbox Blog</a></li>
+                    <li><a href="/about">Our team</a></li>
+                    <li><a href="/press">Press</a></li>
+                    <li><a href="/jobs">Jobs</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <ul>
+                    <li class="header">Support</li>
+                    <li><a href="/help">Help Center</a></li>
+                    <li><a href="/terms">Privacy & Terms</a></li>
+                    <li><a href="/dmca">Copyright</a></li>
+                    <li><a href="/contact">Contact us</a></li>
+                </ul>
+            </div>
+
+
+            <div id="locale-container" class="ui-button">
+              <span id="locale-link" class="link-span"><img src="&#47;static&#47;images&#47;icons&#47;icon_spacer.gif" alt="" class="sprite s_world_grey " /> <a>English</a> <img src="&#47;static&#47;images&#47;icons&#47;icon_spacer.gif" alt="" class="sprite s_sort-uptick-off " /></span>
+              <div id="locale-menu" class="sub-nav chat-bubble-bottom">
+                <ul>
+                  <li><a class="locale-option" data-locale="en">English</a></li>
+                  <li><a class="locale-option" data-locale="es">Español</a></li>
+                  <li><a class="locale-option" data-locale="fr">Français</a></li>
+                  <li><a class="locale-option" data-locale="de">Deutsch</a></li>
+                  <li><a class="locale-option" data-locale="ja">日本語</a></li>
+                </ul>
+                <div class="chat-bubble-arrow-border"></div>
+                <div class="chat-bubble-arrow"></div>
+              </div>
+            </div>
+
            <div class="clear"></div>
         </div>
     </div>
 </div>
 <script type="text/javascript">
     document.observe("dom:loaded", function() {
-        e = $("feedback-link");
-        if (e) {
-            new Effect.Highlight(e , {duration: 0.5});
-        }
-
-        Tabs.init();
-        Tabs.check_interval = setInterval("Tabs.check_url('');", 300);
-        Dropdown.init();
         TranslationSuggest.attach_autocomplete();
     });
 </script>
@@ -662,9 +665,9 @@ the Services. Your license to use the Software is automatically revoked if you v
 <script type="text/javascript">
 if (_gat) {
     GA.pageTracker = _gat._getTracker("UA-279179-2");
-    GA.pageTracker._setDomainName(document.domain);
     Element.observe(window, 'load', function() {
       GA.pageTracker._trackPageview();
+      GA.pageTracker._setDomainName(document.domain);
       GA.setPendingVars();
     });
 }
@@ -683,6 +686,5 @@ TranslationSuggest.update_i18n_messages({});
 
 <div id="notice-container" class="clearfix" style='display:none;'>
 </div>
-
 </body>
 </html>

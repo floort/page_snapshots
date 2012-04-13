@@ -14,11 +14,12 @@
             <link rel="stylesheet" href="/static/compress/css/b5ea1dccbe8f.css" media="screen">
             
             <link rel="stylesheet" media="screen" href="/css/index.css">
-            
+			
             <script type="text/javascript" src="/static/default/js/TypeHelpers.js"></script>
             <script type="text/javascript" src="/static/default/js/swfobject.js"></script>
+            <script type="text/javascript" src="/static/default/js/modernizr.js"></script>
             <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
-            
+
             
             
             
@@ -39,6 +40,10 @@
         
             <!--[if lt IE 8]>
             <link rel="stylesheet" media="screen" href="/static/default/css/lt_ie8.css?v1">
+            <![endif]-->
+
+            <!--[if IE 9]>
+            <link rel="stylesheet" media="screen" href="/static/default/css/ie9.css?v1">
             <![endif]-->
         
             <title>Privacy - Sizz</title>
@@ -104,13 +109,13 @@
 </li>
 
 <li class=" children">
-	<a href="/lekker-mobiel/actueel/">Lekker mobiel</a>
+	<a href="/lekker-mobiel/actueel/">Meer Sizz</a>
 	
     <ul class="second-level">
         
 
 <li class="">
-	<a href="/lekker-mobiel/actueel/">Actueel</a>
+	<a href="/lekker-mobiel/actueel/">What&#39;s new?</a>
 	
 </li>
 
@@ -125,7 +130,7 @@
 </li>
 
 <li class="">
-	<a href="/lekker-mobiel/app/">Sizz-app</a>
+	<a href="/lekker-mobiel/app/">Sizz app</a>
 	
 </li>
 
@@ -139,7 +144,7 @@
 </li>
 
 <li class=" children">
-	<a href="/dit-is-sizz/">Dit is Sizz</a>
+	<a href="/dit-is-sizz/">Over Sizz</a>
 	
     <ul class="second-level">
         
@@ -202,7 +207,8 @@
                     </menu>
                     <div id="branding">
                     
-                        <a href="/"><img src="/static/logo-grey.png" id="logo" alt="Sizz - by vodafone &amp; rtl" width="260" height="134"><img src="/static/logo-white.png" id="logo_hover" alt="" width="260" height="134"></a>
+                        <a href="/"><img src="/static/logo-grey.png" id="logo" alt="Sizz - by vodafone &amp; rtl" width="218" height="134"><img src="/static/logo-white.png" id="logo_hover" alt="" width="218" height="134"></a>
+						
                         
                     
                     </div>
@@ -282,7 +288,7 @@
         </div>
     
    
-        <footer id="footer-wrapper" class="wrapper">
+        <footer id="footer-wrapper" class="wrapper Privacy">
             
             
 
@@ -309,9 +315,9 @@
                      
                     <li><a href="/shop/toestellen/">Shop</a> <span class="divider">&raquo;</span></li>
                      
-                    <li><a href="/lekker-mobiel/actueel/">Lekker mobiel</a> <span class="divider">&raquo;</span></li>
+                    <li><a href="/lekker-mobiel/actueel/">Meer Sizz</a> <span class="divider">&raquo;</span></li>
                      
-                    <li><a href="/dit-is-sizz/">Dit is Sizz</a> <span class="divider">&raquo;</span></li>
+                    <li><a href="/dit-is-sizz/">Over Sizz</a> <span class="divider">&raquo;</span></li>
                      
                     <li><a href="/service/">Service</a> <span class="divider">&raquo;</span></li>
                     
@@ -384,10 +390,13 @@
 
 </div>
 
+
             
         
             
             <script src="https://ad.yieldmanager.com/pixel?id=1291162&amp;t=1" type="text/javascript"></script>
+
+
         </footer>
         
         
@@ -395,11 +404,38 @@
         
         
         
-        <script type="text/javascript" src="/static/compress/js/bdbe5ff9845c.js" charset="utf-8"></script>
+        <script type="text/javascript" src="/static/compress/js/9195c30772d4.js" charset="utf-8"></script>
+        
+        <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20969747-1']);
+    _gaq.push(['_setDomainName', '.sizz.nl']);
+    _gaq.push(['_setAllowLinker', true]); 
+    _gaq.push(['_setAllowHash', false]);
+    _gaq.push(['_trackPageview']);
+
+    /*$tracker = $('#trackerframe');
+    _gaq.push(function() {
+          var pageTracker = _gat._getTrackerByName();
+          var iframe = document.getElementById('trackerframe');
+          iframe.src = pageTracker._getLinkerUrl('iframe_src');
+    });*/
+
+    _gaq.push(['_trackPageLoadTime']);
+    
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+                
 
         <!--[if lt IE 8]>
         <script src="/static/default/js/lt_ie8.js"></script>
         <![endif]-->
+
     
     
     </body>
