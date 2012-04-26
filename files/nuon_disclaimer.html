@@ -31,6 +31,9 @@
 	<!-- global NUON stylesheets -->
 	<link href="/static/css/all.css" rel="stylesheet" type="text/css" title="Standaard" />
 
+<!--[if IE 9]>
+	<link href="/static/css/ie9.css" rel="stylesheet" type="text/css" media="screen" />
+<![endif]-->
 <!--[if IE 7]>
 	<link href="/static/css/ie7.css" rel="stylesheet" type="text/css" media="screen" title="Speciale IE 7 aanpassingen" />
 <![endif]-->
@@ -46,26 +49,17 @@
 	<script type="text/javascript" src="/static/js/immediate.js"></script>
 	  
 	
-	<!-- Start Visual Website Optimizer Code -->
-	<script type='text/javascript'>
-		var _vis_opt_account_id = 5166;
-		var _vis_opt_protocol = (('https:' == document.location.protocol) ? 'https://' : 'http://');
-		document.write('<s' + 'cript src="' + _vis_opt_protocol + 
-		'dev.visualwebsiteoptimizer.com/deploy/js_visitor_settings.php?v=1&a='+_vis_opt_account_id+'&url='
-		+encodeURIComponent(document.URL)+'&random='+Math.random()+'" type="text/javascript">' + '<\/s' + 'cript>');
-	</script>
-		
-	<script type='text/javascript'>
-		if(typeof(_vis_opt_settings_loaded) == "boolean") { document.write('<s' + 'cript src="' + _vis_opt_protocol + 
-		'd5phz18u4wuww.cloudfront.net/vis_opt_no_jquery.js" type="text/javascript">' + '<\/s' + 'cript>'); }
-	</script>
-		
-	<script type='text/javascript'>
-		if(typeof(_vis_opt_settings_loaded) == "boolean" && typeof(_vis_opt_top_initialize) == "function") {
-		        _vis_opt_top_initialize(); vwo_$(document).ready(function() { _vis_opt_bottom_initialize(); });
-		}
-	</script>
-<!-- End Visual Website Optimizer Code -->
+	<!-- Start Visual Website Optimizer Asynchronous Code delivery date 21-03-2012 -->
+<script type='text/javascript'>
+var _vwo_code=(function(){
+var account_id=5166,
+settings_tolerance=2000,
+library_tolerance=1500,
+use_existing_jquery=false,
+// DO NOT EDIT BELOW THIS LINE
+f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&r='+Math.random());var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
+</script>
+<!-- End Visual Website Optimizer Asynchronous Code -->
  
     
 	
